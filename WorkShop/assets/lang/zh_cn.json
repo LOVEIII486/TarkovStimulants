@@ -1,0 +1,112 @@
+{
+    "Stim_Morphine":"吗啡",
+    "Stim_Morphine_Desc":"装满大剂量吗啡的一次性注射器，主要用于处理急性和慢性的重度疼痛。",
+    "TarkovStimulants_Morphine_Buff": "吗啡",
+    "TarkovStimulants_Morphine_Buff_Desc": "略微提升10%体力上限，移除流血状态，获得免疫流血。",
+
+    "Stim_L1":"L1（去甲肾上腺素）",
+    "Stim_L1_Desc":"装有一剂L1的一次性无菌注射器，主要成分是去甲肾上腺素。它是用来短期增加力量和耐力的，还可减少疼痛的影响。它将增强生理反应的执行力，比如“该打还是该跑”。增加水分和能量消耗。",
+    "TarkovStimulants_L1_Buff": "L1-去甲肾上腺素",
+    "TarkovStimulants_L1_Buff_Desc": "大幅提升50%体力上限与20%枪械伤害，但会增加能量与水分消耗。",
+    
+    "Stim_Adrenaline":"肾上腺素注射器",
+    "Stim_Adrenaline_Desc":"一次性无菌注射器，含有一剂肾上腺素——肾上腺髓质的主要激素。用于在增强生理反应的同时为强烈的肌肉活动做准备。可以短暂提升力量和耐力以及缓解疼痛。",
+    "TarkovStimulants_Adrenaline_Buff": "肾上腺素",
+    "TarkovStimulants_Adrenaline_Buff_Desc": "前15秒极速回血，并提升10%枪械伤害与体力上限。",
+
+    "Stim_Propital":"Propital",
+    "Stim_Propital_Desc":"军用药物。通过增加嘌呤和嘧啶碱基、RNA、功能性酶促细胞元素的生物合成来刺激再生过程。能够增加新陈代谢、健康和生命力。但是它有长期的副作用。只允许专业医师和护理人员使用。",
+    "TarkovStimulants_Propital_Buff": "Propital",
+    "TarkovStimulants_Propital_Buff_Desc": "提升20%最大生命值并持续回血，移除流血状态，同时略微降低代谢消耗。",
+    
+    "Stim_eTGc":"eTG-change再生兴奋剂",
+    "Stim_eTGc_Desc":"强大的再生过程促进剂。用于伤员受伤后或重伤员运输过程中的快速恢复，只允许专业医师和护理人员使用。有强副作用。",
+    "TarkovStimulants_eTGc_Buff": "eTG-c",
+    "TarkovStimulants_eTGc_Buff_Desc": "极速恢复生命值（10%/秒），但能量与水分消耗速率翻倍。",
+
+    "Stim_xTG12":"xTG-12解毒剂",
+    "Stim_xTG12_Desc":"它能够中和战争中使用过的大多数已知毒素。也能够用于解除一些自然毒素。其成分在血液中时，可提供对毒素的免疫效果。它会导致健康状况下降。",
+    "TarkovStimulants_xTG12_Buff": "xTG-12",
+    "TarkovStimulants_xTG12_Buff_Desc": "xTG-12",
+
+    "Stim_AHF1M":"AHF1-M兴奋剂",
+    "Stim_AHF1M_Desc":"基于人类抗血友病因子的军用药物。由 TerraGroup 实验室开发，作为一种强大的凝结剂，专门用于 USEC 行动人员。可以暂时止血，并增强对流血的抵抗力。轻微改善健康指标，会导致脱水。",
+    "TarkovStimulants_AHF1M_Buff": "AHF1-M",
+    "TarkovStimulants_AHF1M_Buff_Desc": "AHF1-M",
+
+    "Stim_Zagustin":"Zagustin止血剂",
+    "Stim_Zagustin_Desc":"军用药物。抑制血纤维蛋白的催化并减慢其向溶纤维蛋白酵素的转化，暂时止血并且增加流血抗性。有导致严重脱水的副作用。",
+    "TarkovStimulants_Zagustin_Buff": "Zagustin",
+    "TarkovStimulants_Zagustin_Buff_Desc": "获得流血免疫，并提升 20% 治疗效果。药效期间水分消耗速率提升。",
+
+    "Stim_P22":"P22兴奋剂",
+    "Stim_P22_Desc":"战斗兴奋剂。由 TerraGroup 实验室开发，编号为P22。当身体组织暴露在外时，它可促使内部肌肉包含被动，使身体组织受到较少的损伤。它被用来在战斗前扩展身体的能力。授权给特种部队士兵使用，有副作用。",
+    "TarkovStimulants_P22_Buff": "P22",
+    "TarkovStimulants_P22_Buff_Desc": "提升 15% 物理减伤与 20% 治疗增益，但降低 10% 体力上限与 20% 恢复速度。",
+
+    "Stim_Meldonin":"Meldonin",
+    "Stim_Meldonin_Desc":"为运动员研制的药物。让你在进行更密集的训练时恢复得更快。暂时增加力量，耐力，并加速恢复。随后一个未经证实的特性被发现，它增加了组织对由于内部肌肉张力造成的物理冲击的抵抗力。由于其性质，后来被军方作为战斗兴奋剂使用。它有副作用。",
+    "TarkovStimulants_Meldonin_Buff": "Meldonin",
+    "TarkovStimulants_Meldonin_Buff_Desc": "全面提升30%机动性与体能，但增加20%代谢消耗。",
+
+    "Stim_3bTG":"3-(b-TG)兴奋剂",
+    "Stim_3bTG_Desc":"战斗药物。它对中枢神经系统有刺激作用，可增加感知和注意力。它可以通过给肌肉传递更多更强的信号，来稍微改善肌肉力量。活性物质 3-（b-苯基异丙基）是正二苯胺盐酸盐类化合物。只有军医和医护人员才允许使用。",
+    "TarkovStimulants_3bTG_Buff": "3-(b-TG)",
+    "TarkovStimulants_3bTG_Buff_Desc": "提升50%体力恢复速度与40%感知范围，伴随少量能量代谢负担",
+    
+    
+    "Stim_MULE":"M.U.L.E. 兴奋剂",
+    "Stim_MULE_Desc":"肌肉超大型激励器。它被用来在长途行军之前扩展身体的能力。它能使身体长时间承受更多的重量。它在交通不便地区的作战行动中显示了有效性。授权特种部队士兵使用。由 TerraGroup 实验室开发，标有 M. U. L. E 的记号。",
+    "TarkovStimulants_MULE_Buff": "M.U.L.E.",
+    "TarkovStimulants_MULE_Buff_Desc": "负重上限翻倍，但会持续产生轻微扣血副作用。",
+    
+    "Stim_Obdolbos":"Obdolbos",
+    "Stim_Obdolbos_Desc":"装有自制药品的注射器，由 TerraGroup Labs 的前雇员制作，每次的副作用都不一样。如果你觉得你没什么可失去的了，也可以冒这个险。",
+    "TarkovStimulants_Obdolbos_Buff": "Obdolbos",
+    "TarkovStimulants_Obdolbos_Buff_Desc": "Obdolbos",
+
+    "Stim_Obdolbos2":"Obdolbos 2",
+    "Stim_Obdolbos2_Desc":"装有Sanitar自制药剂的注射器。这是那款老产品的全新版本。看起来，TerraGroup实验室本身的关闭并没有阻止其实验的进行。",
+    "TarkovStimulants_Obdolbos2_Buff": "Obdolbos2",
+    "TarkovStimulants_Obdolbos2_Buff_Desc": "长效药剂，负重上限+45%，大幅提升力量与感知；代价是持续的生命流失与极慢的耐力恢复。",
+
+    "Stim_PNB":"PNB兴奋剂",
+    "Stim_PNB_Desc":"战斗兴奋剂。由TerraGroup实验室开发，代号PNB。其能短期激活内部肌肉，让它们变为高渗透状态，以此降低人体受到的伤害。它还能同时提高蛋白质的合成速度，加快组织恢复。它被用于在战斗的关键时刻提高机能。仅供特种部队使用。具有一定副作用。",
+    "TarkovStimulants_PNB_Buff": "PNB",
+    "TarkovStimulants_PNB_Buff_Desc": "PNB",
+
+    "Stim_Trimadol":"曲马多注射器",
+    "Stim_Trimadol_Desc":"一种为特种部队行动人员提供的阿片类镇痛剂。它能够促进中枢和脊柱神经细胞中钾离子和钙离子通道的开放，引起细胞膜超极化，并抑制疼痛感。除了阵痛效果，它还能提高战斗能力。药效过后，过量的药物会让机体疲劳。",
+    "TarkovStimulants_Trimadol_Buff": "曲马多",
+    "TarkovStimulants_Trimadol_Buff_Desc": "提升耐力恢复速度、力量与感知范围。瞬间移除流血与疼痛状态，但会持续扣除水分与能量。",
+
+    "Stim_Perfotoran":"人造血注射器",
+    "Stim_Perfotoran_Desc":"一种能够转运氧气的血液替代品，被用作中毒、辐射的超级解药。它是苏联科学家于20世纪80年代发明的。这是一种基于PFO混合物的亚微米级乳化液。注入血液后，它能暂时加快代谢，并促进组织恢复。过量使用和免疫反应会对健康带来不利影响。",
+    "TarkovStimulants_Perfotoran_Buff": "人造血",
+    "TarkovStimulants_Perfotoran_Buff_Desc": "提供平稳的生命再生效果并使身体完全免疫中毒状态。",
+
+    "Stim_2A2bTG":"2A2-(b-TG)兴奋剂",
+    "Stim_2A2bTG_Desc":"TerraGroup继3-(b-TG)之后的又一款新产品。此产品项目旨在创造一种能在远离物资供应点进行侦查或转移时，依然提供战斗支撑的药物。同时，这款产品需要能够进行手工生产。它可以使中枢神经系统长期保持稳定，帮助战斗人员接触不同环境，并提高负重能力。使用此产品时，脱水速度将会提高。",
+    "TarkovStimulants_2A2bTG_Buff": "2A2-(b-TG)",
+    "TarkovStimulants_2A2bTG_Buff_Desc": "提升30%负重上限与30%感知范围。",
+
+    "Stim_SJ1":"SJ1 TGLabs战斗兴奋剂",
+    "Stim_SJ1_Desc":"战斗兴奋剂。在战斗前注射能够获得力量和耐力。可以降低疼痛敏感度。兴奋剂被允许供特种作战单位使用。由Terra集团 Labs开发，上面有SJ1的标记。有副作用。",
+    "TarkovStimulants_SJ1_Buff": "SJ1 TGLabs",
+    "TarkovStimulants_SJ1_Buff_Desc": "提升 20% 耐力上限、20% 移动速度以及 20% 的耐力恢复速度。",
+
+    "Stim_SJ6":"SJ6 TGLabs战斗兴奋剂",
+    "Stim_SJ6_Desc":"战斗兴奋剂。在战斗前注射能够提高身体能力。兴奋剂被允许供特种作战单位使用。由Terra集团 Labs开发，上面有SJ6的标记。有副作用。",
+    "TarkovStimulants_SJ6_Buff": "SJ6 TGLabs",
+    "TarkovStimulants_SJ6_Buff_Desc": "大幅增加100%体力上限与恢复速度。",
+
+    "Stim_SJ9":"SJ9 TGLabs战斗兴奋剂",
+    "Stim_SJ9_Desc":"专为特种部队人员定制。它能够在短时间内降低体温，显著减缓代谢。使用SJ9可以显著减少向周围环境散发的热量，同时保持在体内新陈代谢的安全水平上。它被用于夜间行动，让人体在热成像仪器下几乎不可见。",
+    "TarkovStimulants_SJ9_Buff": "SJ9 TGLabs",
+    "TarkovStimulants_SJ9_Buff_Desc": "减少 50% 被探测距离，减缓 20% 能量与水分消耗，但会持续造成轻微生命流失",
+
+    "Stim_SJ12":"SJ12 TGLabs战斗兴奋剂",
+    "Stim_SJ12_Desc":"专为特种部队的行动人员设计。其能够减缓某些身体部位的功能，转为恢复体能。此药剂能够强迫下丘脑分泌加压素，使得肾上腺的工作模式发生改变，进而降低体温、提高感知能力。药效结束后，体温通常会直接升高到40-42摄氏度，这是机体系统未能正常工作而产生的代价。",
+    "TarkovStimulants_SJ12_Buff": "SJ12 TGLabs",
+    "TarkovStimulants_SJ12_Buff_Desc": "持续缓慢恢复能量与水分，并提升20%感知范围。"
+}
