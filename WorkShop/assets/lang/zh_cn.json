@@ -13,6 +13,8 @@
     "Stim_Adrenaline_Desc":"一次性无菌注射器，含有一剂肾上腺素——肾上腺髓质的主要激素。用于在增强生理反应的同时为强烈的肌肉活动做准备。可以短暂提升力量和耐力以及缓解疼痛。",
     "TarkovStimulants_Adrenaline_Buff": "肾上腺素",
     "TarkovStimulants_Adrenaline_Buff_Desc": "前15秒极速回血，并提升10%枪械伤害与体力上限。",
+    "TarkovStimulants_Adrenaline_Debuff": "肾上腺素 副作用",
+    "TarkovStimulants_Adrenaline_Debuff_Desc": "肾上腺素 副作用",
 
     "Stim_Propital":"Propital",
     "Stim_Propital_Desc":"军用药物。通过增加嘌呤和嘧啶碱基、RNA、功能性酶促细胞元素的生物合成来刺激再生过程。能够增加新陈代谢、健康和生命力。但是它有长期的副作用。只允许专业医师和护理人员使用。",
@@ -23,6 +25,8 @@
     "Stim_eTGc_Desc":"强大的再生过程促进剂。用于伤员受伤后或重伤员运输过程中的快速恢复，只允许专业医师和护理人员使用。有强副作用。",
     "TarkovStimulants_eTGc_Buff": "eTG-c",
     "TarkovStimulants_eTGc_Buff_Desc": "极速恢复生命值（10%/秒），但能量与水分消耗速率翻倍。",
+    "TarkovStimulants_eTGc_Debuff": "eTG-c 副作用",
+    "TarkovStimulants_eTGc_Debuff_Desc": "eTG-c 副作用",
 
     "Stim_xTG12":"xTG-12解毒剂",
     "Stim_xTG12_Desc":"它能够中和战争中使用过的大多数已知毒素。也能够用于解除一些自然毒素。其成分在血液中时，可提供对毒素的免疫效果。它会导致健康状况下降。",
@@ -108,5 +112,12 @@
     "Stim_SJ12":"SJ12 TGLabs战斗兴奋剂",
     "Stim_SJ12_Desc":"专为特种部队的行动人员设计。其能够减缓某些身体部位的功能，转为恢复体能。此药剂能够强迫下丘脑分泌加压素，使得肾上腺的工作模式发生改变，进而降低体温、提高感知能力。药效结束后，体温通常会直接升高到40-42摄氏度，这是机体系统未能正常工作而产生的代价。",
     "TarkovStimulants_SJ12_Buff": "SJ12 TGLabs",
-    "TarkovStimulants_SJ12_Buff_Desc": "持续缓慢恢复能量与水分，并提升20%感知范围。"
+    "TarkovStimulants_SJ12_Buff_Desc": "持续缓慢恢复能量与水分，并提升20%感知范围。",
+
+    "TarkovStimulants_Tremor_Debuff": "震颤",
+    "TarkovStimulants_Tremor_Debuff_Desc": "震颤",
+    "TarkovStimulants_TunnelVision_Debuff": "管视效应",
+    "TarkovStimulants_TunnelVision_Debuff_Desc": "管视效应",
+    "TarkovStimulants_InstantDeath_Debuff": "即死",
+    "TarkovStimulants_InstantDeath_Debuff_Desc": "即死"
 }
