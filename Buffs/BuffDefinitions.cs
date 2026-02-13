@@ -216,8 +216,9 @@ namespace TarkovStimulants.Buffs
             new QuackBuffDefinition(new QuackBuffFactory.BuffConfig("TarkovStimulants", "Perfotoran_Buff", 999111, 60f,
                     GetIconPath("Perfotoran")))
                 .AddCustomLogic(new RegenerationLogic(0.08f, 1.0f))
-                .AddEffect(new ApplyBuffEffect("1075_Buff_PoisonResistShort",60))
-                .AddCustomLogic(new BuffImmunityLogic(false, 1001, 1002, 1061));
+                .AddEffect(new ApplyBuffEffect("1075_Buff_PoisonResistShort", 60))
+                .AddEffect(new ApplyBuffEffect("1019_buff_Injector_BleedResist",-1));
+                //.AddCustomLogic(new BuffImmunityLogic(false, 1001, 1002, 1061));
 
         // 12. Stim_2A2bTG (侦察针)
         /// <summary>

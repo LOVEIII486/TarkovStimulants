@@ -9,6 +9,7 @@ namespace TarkovStimulants.Items
 {
     public static class ItemDefinitions
     {
+        // 1. eTG-change (绿针) - 品阶4, 价格3500
         public static readonly QuackItemDefinition Stim_eTGc = new QuackItemDefinition
         {
             BaseData = new ItemData
@@ -18,7 +19,7 @@ namespace TarkovStimulants.Items
                 localizationKey = "Stim_eTGc",
                 localizationDesc = "Stim_eTGc_Desc",
                 weight = 0.1f,
-                value = 3000,
+                value = 3500,
                 quality = 5,
                 displayQuality = DisplayQuality.Orange,
                 maxStackCount = 3,
@@ -39,7 +40,7 @@ namespace TarkovStimulants.Items
             Shop = new QuackItemDefinition.ShopConfig
             {
                 MerchantID = MerchantIDs.Mud,
-                MaxStock = 3,
+                MaxStock = 1,
                 PriceFactor = 1.0f,
                 Probability = 1.0f,
                 ForceUnlock = true
@@ -71,6 +72,7 @@ namespace TarkovStimulants.Items
             // }
         };
 
+        // 2. SJ12 (代谢针) - 品阶3, 价格2350
         public static readonly QuackItemDefinition Stim_SJ12 = new QuackItemDefinition
         {
             BaseData = new ItemData
@@ -80,9 +82,9 @@ namespace TarkovStimulants.Items
                 localizationKey = "Stim_SJ12",
                 localizationDesc = "Stim_SJ12_Desc",
                 weight = 0.1f,
-                value = 1200,
-                quality = 4,
-                displayQuality = DisplayQuality.Purple,
+                value = 850,
+                quality = 3,
+                displayQuality = DisplayQuality.Blue,
                 maxStackCount = 3,
                 tags = new List<string> { "Medic", "Injector" },
                 spritePath = "items/SJ12.png",
@@ -125,6 +127,7 @@ namespace TarkovStimulants.Items
             },
         };
 
+        // 3. Propital (普罗皮醛) - 品阶2, 价格850
         public static readonly QuackItemDefinition Stim_Propital = new QuackItemDefinition
         {
             BaseData = new ItemData
@@ -134,9 +137,9 @@ namespace TarkovStimulants.Items
                 localizationKey = "Stim_Propital",
                 localizationDesc = "Stim_Propital_Desc",
                 weight = 0.1f,
-                value = 1500,
-                quality = 4,
-                displayQuality = DisplayQuality.Purple,
+                value = 1200,
+                quality = 3,
+                displayQuality = DisplayQuality.Blue,
                 maxStackCount = 3,
                 tags = new List<string> { "Medic", "Injector" },
                 spritePath = "items/Propital.png",
@@ -148,9 +151,7 @@ namespace TarkovStimulants.Items
                     behaviors = new List<UsageBehaviorData>
                     {
                         new FoodData { energyValue = -5f, waterValue = -10f },
-                        new QuackAddBuffData { buffName = "TarkovStimulants_Propital_Buff", chance = 1.0f },
-                        new RemoveBuffData { buffID = 1001 },
-                        new AddBuffData { buff = 1019, chance = 1f },
+                        new QuackAddBuffData { buffName = "TarkovStimulants_Propital_Buff", chance = 1.0f }
                     }
                 }
             },
@@ -178,6 +179,7 @@ namespace TarkovStimulants.Items
             }
         };
 
+        // 4. SJ6 (耐力针) - 品阶4, 价格3200
         public static readonly QuackItemDefinition Stim_SJ6 = new QuackItemDefinition
         {
             BaseData = new ItemData
@@ -187,8 +189,8 @@ namespace TarkovStimulants.Items
                 localizationKey = "Stim_SJ6",
                 localizationDesc = "Stim_SJ6_Desc",
                 weight = 0.1f,
-                value = 800,
-                quality = 3,
+                value = 648,
+                quality = 2,
                 displayQuality = DisplayQuality.Blue,
                 maxStackCount = 3,
                 tags = new List<string> { "Medic", "Injector" },
@@ -206,7 +208,13 @@ namespace TarkovStimulants.Items
                 }
             },
             Shop = new QuackItemDefinition.ShopConfig
-                { MerchantID = MerchantIDs.Mud, MaxStock = 2, ForceUnlock = true },
+            {
+                MerchantID = MerchantIDs.Mud,
+                MaxStock = 3,
+                PriceFactor = 1.0f,
+                Probability = 1.0f,
+                ForceUnlock = true
+            },
             Crafting = new QuackItemDefinition.CraftingConfig
             {
                 FormulaID = "formula_SJ6_craft",
@@ -217,6 +225,7 @@ namespace TarkovStimulants.Items
             }
         };
 
+        // 5. M.U.L.E. (负重针) - 品阶4, 价格3650
         public static readonly QuackItemDefinition Stim_MULE = new QuackItemDefinition
         {
             BaseData = new ItemData
@@ -226,7 +235,7 @@ namespace TarkovStimulants.Items
                 localizationKey = "Stim_MULE",
                 localizationDesc = "Stim_MULE_Desc",
                 weight = 0.1f,
-                value = 1200,
+                value = 1650,
                 quality = 4,
                 displayQuality = DisplayQuality.Purple,
                 maxStackCount = 3,
@@ -245,7 +254,13 @@ namespace TarkovStimulants.Items
                 }
             },
             Shop = new QuackItemDefinition.ShopConfig
-                { MerchantID = MerchantIDs.Mud, MaxStock = 1, ForceUnlock = true },
+            {
+                MerchantID = MerchantIDs.Mud,
+                MaxStock = 1,
+                PriceFactor = 1.0f,
+                Probability = 1.0f,
+                ForceUnlock = true
+            },
             Crafting = new QuackItemDefinition.CraftingConfig
             {
                 FormulaID = "formula_MULE_craft",
@@ -256,6 +271,7 @@ namespace TarkovStimulants.Items
             }
         };
 
+        // 6. Adrenaline (肾上腺素) - 品阶2, 价格610
         public static readonly QuackItemDefinition Stim_Adrenaline = new QuackItemDefinition
         {
             BaseData = new ItemData
@@ -265,9 +281,9 @@ namespace TarkovStimulants.Items
                 localizationKey = "Stim_Adrenaline",
                 localizationDesc = "Stim_Adrenaline_Desc",
                 weight = 0.1f,
-                value = 800,
-                quality = 3,
-                displayQuality = DisplayQuality.Blue,
+                value = 610,
+                quality = 2,
+                displayQuality = DisplayQuality.Green,
                 maxStackCount = 3,
                 tags = new List<string> { "Medic", "Injector" },
                 spritePath = "items/Adrenaline.png",
@@ -280,12 +296,17 @@ namespace TarkovStimulants.Items
                     {
                         new FoodData { energyValue = -5f, waterValue = -10f },
                         new QuackAddBuffData { buffName = "TarkovStimulants_Adrenaline_Buff", chance = 1.0f },
-                        new AddBuffData { buff = 1082, chance = 1.0f }
                     }
                 }
             },
             Shop = new QuackItemDefinition.ShopConfig
-                { MerchantID = MerchantIDs.Mud, MaxStock = 5, ForceUnlock = true },
+            {
+                MerchantID = MerchantIDs.Mud,
+                MaxStock = 5,
+                PriceFactor = 1.0f,
+                Probability = 1.0f,
+                ForceUnlock = true
+            },
             Crafting = new QuackItemDefinition.CraftingConfig
             {
                 FormulaID = "formula_Adrenaline_craft",
@@ -296,6 +317,7 @@ namespace TarkovStimulants.Items
             }
         };
 
+        // 7. Meldonin (米屈肼) - 品阶3, 价格2100
         public static readonly QuackItemDefinition Stim_Meldonin = new QuackItemDefinition
         {
             BaseData = new ItemData
@@ -305,9 +327,9 @@ namespace TarkovStimulants.Items
                 localizationKey = "Stim_Meldonin",
                 localizationDesc = "Stim_Meldonin_Desc",
                 weight = 0.1f,
-                value = 1800,
-                quality = 4,
-                displayQuality = DisplayQuality.Purple,
+                value = 1300,
+                quality = 3,
+                displayQuality = DisplayQuality.Blue,
                 maxStackCount = 3,
                 tags = new List<string> { "Medic", "Injector" },
                 spritePath = "items/Meldonin.png",
@@ -324,7 +346,13 @@ namespace TarkovStimulants.Items
                 }
             },
             Shop = new QuackItemDefinition.ShopConfig
-                { MerchantID = MerchantIDs.Mud, MaxStock = 2, ForceUnlock = true },
+            {
+                MerchantID = MerchantIDs.Mud,
+                MaxStock = 3,
+                PriceFactor = 1.0f,
+                Probability = 1.0f,
+                ForceUnlock = true
+            },
             Crafting = new QuackItemDefinition.CraftingConfig
             {
                 FormulaID = "formula_Meldonin_craft",
@@ -335,7 +363,7 @@ namespace TarkovStimulants.Items
             }
         };
 
-
+        // 8. Morphine (吗啡) - 品阶2, 价格580
         public static readonly QuackItemDefinition Stim_Morphine = new QuackItemDefinition
         {
             BaseData = new ItemData
@@ -345,9 +373,9 @@ namespace TarkovStimulants.Items
                 localizationKey = "Stim_Morphine",
                 localizationDesc = "Stim_Morphine_Desc",
                 weight = 0.1f,
-                value = 800,
-                quality = 3,
-                displayQuality = DisplayQuality.Blue,
+                value = 580,
+                quality = 2,
+                displayQuality = DisplayQuality.Green,
                 maxStackCount = 3,
                 tags = new List<string> { "Medic", "Injector" },
                 spritePath = "items/Morphine.png",
@@ -358,34 +386,44 @@ namespace TarkovStimulants.Items
                     useTime = 0.5f,
                     behaviors = new List<UsageBehaviorData>
                     {
-                        new FoodData { energyValue = -5f, waterValue = -10f },
+                        new FoodData { energyValue = -10f, waterValue = -15f },
                         new QuackAddBuffData { buffName = "TarkovStimulants_Morphine_Buff", chance = 1.0f },
-                        new RemoveBuffData { buffID = 1001 },
-                        new AddBuffData { buff = 1019, chance = 1f },
-                        new AddBuffData { buff = 1083, chance = 1f },
+                        //new AddBuffData { buff = 1019, chance = 1f },
+                        //new AddBuffData { buff = 1083, chance = 1f }
                     }
                 }
             },
             Shop = new QuackItemDefinition.ShopConfig
             {
                 MerchantID = MerchantIDs.Mud,
-                MaxStock = 3,
+                MaxStock = 5,
                 PriceFactor = 1.0f,
                 Probability = 1.0f,
                 ForceUnlock = true
             }
         };
 
+        // 9. L1 (去甲肾上腺素) - 品阶2, 价格880
         public static readonly QuackItemDefinition Stim_L1 = new QuackItemDefinition
         {
             BaseData = new ItemData
             {
-                itemId = 999009, order = 108, localizationKey = "Stim_L1", localizationDesc = "Stim_L1_Desc",
-                weight = 0.1f, value = 900, quality = 4, displayQuality = DisplayQuality.Purple,
-                maxStackCount = 3, tags = new List<string> { "Medic", "Injector" }, spritePath = "items/L1.png",
+                itemId = 999009,
+                order = 108,
+                localizationKey = "Stim_L1",
+                localizationDesc = "Stim_L1_Desc",
+                weight = 0.1f,
+                value = 880,
+                quality = 2,
+                displayQuality = DisplayQuality.Green,
+                maxStackCount = 3,
+                tags = new List<string> { "Medic", "Injector" },
+                spritePath = "items/L1.png",
                 usages = new UsageData
                 {
-                    actionSound = "SFX/Item/use_syringe", useSound = "SFX/Item/use_syringe_success", useTime = 0.5f,
+                    actionSound = "SFX/Item/use_syringe",
+                    useSound = "SFX/Item/use_syringe_success",
+                    useTime = 0.5f,
                     behaviors = new List<UsageBehaviorData>
                     {
                         new FoodData { energyValue = -15f, waterValue = -15f },
@@ -400,19 +438,30 @@ namespace TarkovStimulants.Items
                 PriceFactor = 1.0f,
                 Probability = 1.0f,
                 ForceUnlock = true
-            },
+            }
         };
 
+        // 10. 3-(b-TG) (感知针) - 品阶3, 价格2300
         public static readonly QuackItemDefinition Stim_3bTG = new QuackItemDefinition
         {
             BaseData = new ItemData
             {
-                itemId = 999010, order = 109, localizationKey = "Stim_3bTG", localizationDesc = "Stim_3bTG_Desc",
-                weight = 0.1f, value = 1500, quality = 4, displayQuality = DisplayQuality.Purple,
-                maxStackCount = 3, tags = new List<string> { "Medic", "Injector" }, spritePath = "items/3-(b-TG).png",
+                itemId = 999010,
+                order = 109,
+                localizationKey = "Stim_3bTG",
+                localizationDesc = "Stim_3bTG_Desc",
+                weight = 0.1f,
+                value = 1700,
+                quality = 3,
+                displayQuality = DisplayQuality.Blue,
+                maxStackCount = 3,
+                tags = new List<string> { "Medic", "Injector" },
+                spritePath = "items/3-(b-TG).png",
                 usages = new UsageData
                 {
-                    actionSound = "SFX/Item/use_syringe", useSound = "SFX/Item/use_syringe_success", useTime = 0.5f,
+                    actionSound = "SFX/Item/use_syringe",
+                    useSound = "SFX/Item/use_syringe_success",
+                    useTime = 0.5f,
                     behaviors = new List<UsageBehaviorData>
                     {
                         new FoodData { energyValue = -10f },
@@ -423,65 +472,85 @@ namespace TarkovStimulants.Items
             Shop = new QuackItemDefinition.ShopConfig
             {
                 MerchantID = MerchantIDs.Mud,
-                MaxStock = 3,
+                MaxStock = 2,
                 PriceFactor = 1.0f,
                 Probability = 1.0f,
                 ForceUnlock = true
-            },
+            }
         };
 
+        // 11. Perfotoran (蓝血) - 品阶3, 价格2150
         public static readonly QuackItemDefinition Stim_Perfotoran = new QuackItemDefinition
         {
             BaseData = new ItemData
             {
-                itemId = 999011, order = 110, localizationKey = "Stim_Perfotoran",
+                itemId = 999011,
+                order = 110,
+                localizationKey = "Stim_Perfotoran",
                 localizationDesc = "Stim_Perfotoran_Desc",
-                weight = 0.1f, value = 2200, quality = 5, displayQuality = DisplayQuality.Orange,
-                maxStackCount = 3, tags = new List<string> { "Medic", "Injector" }, spritePath = "items/Perfotoran.png",
+                weight = 0.1f,
+                value = 2150,
+                quality = 3,
+                displayQuality = DisplayQuality.Blue,
+                maxStackCount = 3,
+                tags = new List<string> { "Medic", "Injector" },
+                spritePath = "items/Perfotoran.png",
                 usages = new UsageData
                 {
-                    actionSound = "SFX/Item/use_syringe", useSound = "SFX/Item/use_syringe_success", useTime = 0.5f,
+                    actionSound = "SFX/Item/use_syringe",
+                    useSound = "SFX/Item/use_syringe_success",
+                    useTime = 0.5f,
                     behaviors = new List<UsageBehaviorData>
                     {
                         new FoodData { energyValue = -5f, waterValue = -10f },
                         new QuackAddBuffData { buffName = "TarkovStimulants_Perfotoran_Buff", chance = 1.0f },
-                        new RemoveBuffData { buffID = 1001 },
-                        new RemoveBuffData { buffID = 1061 },
-                        new AddBuffData { buff = 1019, chance = 1f },
+                        //new RemoveBuffData { buffID = 1001 },
+                        //new AddBuffData { buff = 1019, chance = 1f }
                     }
                 }
             },
             Shop = new QuackItemDefinition.ShopConfig
             {
                 MerchantID = MerchantIDs.Mud,
-                MaxStock = 3,
+                MaxStock = 2,
                 PriceFactor = 1.0f,
                 Probability = 1.0f,
                 ForceUnlock = true
-            },
+            }
         };
 
+        // 12. 2A2-(b-TG) (侦察针) - 品阶3, 价格2400
         public static readonly QuackItemDefinition Stim_2A2bTG = new QuackItemDefinition
         {
             BaseData = new ItemData
             {
-                itemId = 999012, order = 111, localizationKey = "Stim_2A2bTG", localizationDesc = "Stim_2A2bTG_Desc",
-                weight = 0.1f, value = 500, quality = 3, displayQuality = DisplayQuality.Blue,
-                maxStackCount = 3, tags = new List<string> { "Medic", "Injector" }, spritePath = "items/2A2-(b-TG).png",
+                itemId = 999012,
+                order = 111,
+                localizationKey = "Stim_2A2bTG",
+                localizationDesc = "Stim_2A2bTG_Desc",
+                weight = 0.1f,
+                value = 648,
+                quality = 3,
+                displayQuality = DisplayQuality.Blue,
+                maxStackCount = 3,
+                tags = new List<string> { "Medic", "Injector" },
+                spritePath = "items/2A2-(b-TG).png",
                 usages = new UsageData
                 {
-                    actionSound = "SFX/Item/use_syringe", useSound = "SFX/Item/use_syringe_success", useTime = 0.5f,
+                    actionSound = "SFX/Item/use_syringe",
+                    useSound = "SFX/Item/use_syringe_success",
+                    useTime = 0.5f,
                     behaviors = new List<UsageBehaviorData>
                     {
                         new FoodData { waterValue = -15f },
-                        new QuackAddBuffData { buffName = "TarkovStimulants_2A2bTG_Buff", chance = 1.0f }
+                        new QuackAddBuffData { buffName = "TarkovStimulants_Stim_2A2bTG_Buff", chance = 1.0f }
                     }
                 }
-            },        
+            },
             Shop = new QuackItemDefinition.ShopConfig
             {
                 MerchantID = MerchantIDs.Mud,
-                MaxStock = 3,
+                MaxStock = 2,
                 PriceFactor = 1.0f,
                 Probability = 1.0f,
                 ForceUnlock = true
@@ -495,7 +564,8 @@ namespace TarkovStimulants.Items
                 UnlockByDefault = true
             }
         };
-        
+
+        // 13. P22 (防护针) - 品阶2, 价格920
         public static readonly QuackItemDefinition Stim_P22 = new QuackItemDefinition
         {
             BaseData = new ItemData
@@ -505,9 +575,9 @@ namespace TarkovStimulants.Items
                 localizationKey = "Stim_P22",
                 localizationDesc = "Stim_P22_Desc",
                 weight = 0.1f,
-                value = 2300,
-                quality = 4,
-                displayQuality = DisplayQuality.Purple,
+                value = 2400,
+                quality = 5,
+                displayQuality = DisplayQuality.Orange,
                 maxStackCount = 3,
                 tags = new List<string> { "Medic", "Injector" },
                 spritePath = "items/P22.png",
@@ -526,13 +596,14 @@ namespace TarkovStimulants.Items
             Shop = new QuackItemDefinition.ShopConfig
             {
                 MerchantID = MerchantIDs.Mud,
-                MaxStock = 2,
+                MaxStock = 3,
                 PriceFactor = 1.0f,
                 Probability = 1.0f,
                 ForceUnlock = true
             }
         };
-        
+
+        // 14. Obdolbos 2 - 品阶4, 价格4500
         public static readonly QuackItemDefinition Stim_Obdolbos2 = new QuackItemDefinition
         {
             BaseData = new ItemData
@@ -542,7 +613,7 @@ namespace TarkovStimulants.Items
                 localizationKey = "Stim_Obdolbos2",
                 localizationDesc = "Stim_Obdolbos2_Desc",
                 weight = 0.1f,
-                value = 7500,
+                value = 4500,
                 quality = 5,
                 displayQuality = DisplayQuality.Orange,
                 maxStackCount = 1,
@@ -569,17 +640,18 @@ namespace TarkovStimulants.Items
                 ForceUnlock = true
             }
         };
-        
+
+        // 15. Trimadol (特美多) - 品阶4, 价格4200
         public static readonly QuackItemDefinition Stim_Trimadol = new QuackItemDefinition
         {
             BaseData = new ItemData
             {
                 itemId = 999015,
-                order = 115,
+                order = 114,
                 localizationKey = "Stim_Trimadol",
                 localizationDesc = "Stim_Trimadol_Desc",
                 weight = 0.1f,
-                value = 4200,
+                value = 3200,
                 quality = 4,
                 displayQuality = DisplayQuality.Purple,
                 maxStackCount = 3,
@@ -593,7 +665,7 @@ namespace TarkovStimulants.Items
                     behaviors = new List<UsageBehaviorData>
                     {
                         new QuackAddBuffData { buffName = "TarkovStimulants_Trimadol_Buff", chance = 1.0f },
-                        new RemoveBuffData { buffID = 1001 },
+                        new RemoveBuffData { buffID = 1001 }
                     }
                 }
             },
@@ -606,13 +678,14 @@ namespace TarkovStimulants.Items
                 ForceUnlock = true
             }
         };
-        
+
+        // 16. SJ1 (体能针) - 品阶3, 价格1800
         public static readonly QuackItemDefinition Stim_SJ1 = new QuackItemDefinition
         {
             BaseData = new ItemData
             {
                 itemId = 999016,
-                order = 116,
+                order = 115,
                 localizationKey = "Stim_SJ1",
                 localizationDesc = "Stim_SJ1_Desc",
                 weight = 0.1f,
@@ -643,19 +716,20 @@ namespace TarkovStimulants.Items
                 ForceUnlock = true
             }
         };
-        
+
+        // 17. Zagustin (止血针) - 品阶3, 价格1850
         public static readonly QuackItemDefinition Stim_Zagustin = new QuackItemDefinition
         {
             BaseData = new ItemData
             {
                 itemId = 999017,
-                order = 117,
+                order = 116,
                 localizationKey = "Stim_Zagustin",
                 localizationDesc = "Stim_Zagustin_Desc",
                 weight = 0.1f,
-                value = 1000,
-                quality = 4,
-                displayQuality = DisplayQuality.Purple,
+                value = 1050,
+                quality = 3,
+                displayQuality = DisplayQuality.Blue,
                 maxStackCount = 3,
                 tags = new List<string> { "Medic", "Injector" },
                 spritePath = "items/Zagustin.png",
@@ -667,7 +741,7 @@ namespace TarkovStimulants.Items
                     behaviors = new List<UsageBehaviorData>
                     {
                         new QuackAddBuffData { buffName = "TarkovStimulants_Zagustin_Buff", chance = 1.0f },
-                        new RemoveBuffData { buffID = 1001 } 
+                        new RemoveBuffData { buffID = 1001 }
                     }
                 }
             },
@@ -680,19 +754,20 @@ namespace TarkovStimulants.Items
                 ForceUnlock = true
             }
         };
-        
+
+        // 18. SJ9 (冷血针) - 品阶3, 价格2500
         public static readonly QuackItemDefinition Stim_SJ9 = new QuackItemDefinition
         {
             BaseData = new ItemData
             {
                 itemId = 999018,
-                order = 118,
+                order = 117,
                 localizationKey = "Stim_SJ9",
                 localizationDesc = "Stim_SJ9_Desc",
                 weight = 0.1f,
-                value = 2400,
-                quality = 5,
-                displayQuality = DisplayQuality.Orange,
+                value = 2500,
+                quality = 4,
+                displayQuality = DisplayQuality.Purple,
                 maxStackCount = 3,
                 tags = new List<string> { "Medic", "Injector" },
                 spritePath = "items/SJ9.png",
@@ -713,31 +788,17 @@ namespace TarkovStimulants.Items
                 MerchantID = MerchantIDs.Mud,
                 MaxStock = 1,
                 PriceFactor = 1.0f,
-                Probability = 0.8f,
+                Probability = 0.7f,
                 ForceUnlock = true
             }
         };
 
         public static readonly List<QuackItemDefinition> AllQuackItems = new List<QuackItemDefinition>
         {
-            Stim_eTGc,
-            Stim_SJ12,
-            Stim_Propital,
-            Stim_SJ6,
-            Stim_MULE,
-            Stim_Adrenaline,
-            Stim_Meldonin,
-            Stim_Morphine,
-            Stim_L1,
-            Stim_3bTG,
-            Stim_Perfotoran,
-            Stim_2A2bTG,
-            Stim_P22,
-            Stim_Obdolbos2,
-            Stim_Trimadol,
-            Stim_SJ1,
-            Stim_Zagustin,
-            Stim_SJ9
+            Stim_eTGc, Stim_SJ12, Stim_Propital, Stim_SJ6, Stim_MULE, Stim_Adrenaline,
+            Stim_Meldonin, Stim_Morphine, Stim_L1, Stim_3bTG, Stim_Perfotoran,
+            Stim_2A2bTG, Stim_P22, Stim_Obdolbos2, Stim_Trimadol, Stim_SJ1,
+            Stim_Zagustin, Stim_SJ9
         };
     }
 }
