@@ -1099,7 +1099,7 @@ namespace TarkovStimulants.Items
                 quality = 6,
                 displayQuality = DisplayQuality.Red,
                 maxStackCount = 1,
-                tags = new List<string> { "Medic", "Container" },
+                tags = new List<string> { "Medic", "Continer" }, // 官方就是写的Continer，容器
                 spritePath = "items/InjectorCase.png",
                 usages = null
             },
