@@ -271,10 +271,10 @@ namespace TarkovStimulants.Buffs
         /// 1秒延迟；1800秒持续时间:最大耐力（-20）耐力恢复（-1/秒）生命恢复（-1/秒）
         /// </summary>
         public static readonly QuackBuffDefinition Obdolbos2_Buff =
-            new QuackBuffDefinition(new QuackBuffFactory.BuffConfig("TarkovStimulants", "Obdolbos2_Buff", 999114, 1200f,
+            new QuackBuffDefinition(new QuackBuffFactory.BuffConfig("TarkovStimulants", "Obdolbos2_Buff", 999114, 900f,
                     GetIconPath("Obdolbos 2")))
                 .AddEffect(new AttributeModifierEffect(ModifierKeyConstant.Stat.MaxWeight, 1.5f, true))
-                .AddEffect(new AttributeModifierEffect(ModifierKeyConstant.Stat.RunSpeed, 1.5f, true))
+                .AddEffect(new AttributeModifierEffect(ModifierKeyConstant.Stat.RunSpeed, 1.4f, true))
                 .AddEffect(new AttributeModifierEffect(ModifierKeyConstant.Stat.SenseRange, 3.0f, false))
                 .AddEffect(new AttributeModifierEffect(ModifierKeyConstant.Stat.FishingTime, 0.5f, true))
                 .AddEffect(new AttributeModifierEffect(ModifierKeyConstant.Stat.FishingQualityFactor, 1.7f, true))

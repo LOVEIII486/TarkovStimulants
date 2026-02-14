@@ -646,7 +646,7 @@ namespace TarkovStimulants.Items
                 value = 4500,
                 quality = 5,
                 displayQuality = DisplayQuality.Orange,
-                maxStackCount = 1,
+                maxStackCount = 3,
                 tags = new List<string> { "Medic", "Injector" },
                 spritePath = "items/Obdolbos 2.png",
                 usages = new UsageData
@@ -1010,42 +1010,42 @@ namespace TarkovStimulants.Items
         };
 
         // 23. SJ15 (巅峰针) - 品阶 5, 价格 7200
-        public static readonly QuackItemDefinition Stim_SJ15 = new QuackItemDefinition
-        {
-            BaseData = new ItemData
-            {
-                itemId = 999023,
-                order = 123,
-                localizationKey = "Stim_SJ15",
-                localizationDesc = "Stim_SJ15_Desc",
-                weight = 0.1f,
-                value = 7200,
-                quality = 5,
-                displayQuality = DisplayQuality.Orange,
-                maxStackCount = 3,
-                tags = new List<string> { "Medic", "Injector" },
-                spritePath = "items/SJ15.png",
-                usages = new UsageData
-                {
-                    actionSound = "SFX/Item/use_syringe",
-                    useSound = "SFX/Item/use_syringe_success",
-                    useTime = 0.5f,
-                    behaviors = new List<UsageBehaviorData>
-                    {
-                        new FoodData { energyValue = -5f, waterValue = -10f },
-                        new QuackAddBuffData { buffName = "TarkovStimulants_SJ15_Buff", chance = 1.0f }
-                    }
-                }
-            },
-            Shop = new QuackItemDefinition.ShopConfig
-            {
-                MerchantID = MerchantIDs.Mud,
-                MaxStock = 1,
-                PriceFactor = 1.0f,
-                Probability = 1.0f,
-                ForceUnlock = true
-            }
-        };
+        // public static readonly QuackItemDefinition Stim_SJ15 = new QuackItemDefinition
+        // {
+        //     BaseData = new ItemData
+        //     {
+        //         itemId = 999023,
+        //         order = 123,
+        //         localizationKey = "Stim_SJ15",
+        //         localizationDesc = "Stim_SJ15_Desc",
+        //         weight = 0.1f,
+        //         value = 7200,
+        //         quality = 5,
+        //         displayQuality = DisplayQuality.Orange,
+        //         maxStackCount = 3,
+        //         tags = new List<string> { "Medic", "Injector" },
+        //         spritePath = "items/SJ15.png",
+        //         usages = new UsageData
+        //         {
+        //             actionSound = "SFX/Item/use_syringe",
+        //             useSound = "SFX/Item/use_syringe_success",
+        //             useTime = 0.5f,
+        //             behaviors = new List<UsageBehaviorData>
+        //             {
+        //                 new FoodData { energyValue = -5f, waterValue = -10f },
+        //                 new QuackAddBuffData { buffName = "TarkovStimulants_SJ15_Buff", chance = 1.0f }
+        //             }
+        //         }
+        //     },
+        //     Shop = new QuackItemDefinition.ShopConfig
+        //     {
+        //         MerchantID = MerchantIDs.Mud,
+        //         MaxStock = 1,
+        //         PriceFactor = 1.0f,
+        //         Probability = 1.0f,
+        //         ForceUnlock = true
+        //     }
+        // };
 
         // // 24. Obdolbos N - 品阶 5, 价格 7500
         // public static readonly QuackItemDefinition Stim_ObdolbosN = new QuackItemDefinition
