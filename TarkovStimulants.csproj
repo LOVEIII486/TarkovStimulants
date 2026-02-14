@@ -28,8 +28,6 @@
 
     <ItemGroup>
       <Folder Include="Buffs\Effects\" />
-      <Folder Include="Items\Behaviors\" />
-      <Folder Include="Items\Data\" />
     </ItemGroup>
 
     <Target Name="PostBuild" AfterTargets="PostBuildEvent">

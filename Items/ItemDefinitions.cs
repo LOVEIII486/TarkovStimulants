@@ -4,6 +4,7 @@ using ItemStatsSystem;
 using QuackCore.Constants;
 using QuackCore.Items;
 using QuackCore.Items.UsageData;
+using TarkovStimulants.Items.Data;
 
 namespace TarkovStimulants.Items
 {
@@ -1127,6 +1128,54 @@ namespace TarkovStimulants.Items
                 ForceUnlock = false
             }
         };
+        
+        public static readonly QuackItemDefinition Item_AutoStimCase = new QuackItemDefinition
+        {
+            BaseData = new ItemData
+            {
+                itemId = 999051,
+                order = 201,
+                localizationKey = "Item_AutoStimCase",
+                localizationDesc = "Item_AutoStimCase_Desc",
+                weight = 1.0f,
+                value = 35000,
+                quality = 6,
+                displayQuality = DisplayQuality.Red,
+                maxStackCount = 1,
+                maxDurability = 1f,
+                tags = new List<string> { "Medic", "Continer" }, // 官方就是写的Continer，容器
+                spritePath = "items/AutoStimCase.png",
+                usages = new UsageData
+                {
+                    actionSound = "SFX/Item/use_syringe",
+                    useSound = "SFX/Item/use_syringe_success",
+                    useTime = 0.3f,
+                    useDurability = false,
+                    durabilityUsage = 0,
+                    behaviors = new List<UsageBehaviorData>
+                    {
+                        new AutoStimCaseData()
+                    }
+                }
+            },
+            Slots = new List<QuackItemDefinition.SlotConfig>
+            {
+                new QuackItemDefinition.SlotConfig { Key = "0", RequireTags = new List<string> { "Injector" } },
+                new QuackItemDefinition.SlotConfig { Key = "1", RequireTags = new List<string> { "Injector" } },
+                new QuackItemDefinition.SlotConfig { Key = "2", RequireTags = new List<string> { "Injector" } },
+                new QuackItemDefinition.SlotConfig { Key = "3", RequireTags = new List<string> { "Injector" } },
+                new QuackItemDefinition.SlotConfig { Key = "4", RequireTags = new List<string> { "Injector" } },
+                new QuackItemDefinition.SlotConfig { Key = "5", RequireTags = new List<string> { "Injector" } }
+            },
+            Shop = new QuackItemDefinition.ShopConfig
+            {
+                MerchantID = MerchantIDs.Mud,
+                MaxStock = 1,
+                PriceFactor = 1.0f,
+                Probability = 1.0f,
+                ForceUnlock = false
+            }
+        };
 
         public static readonly List<QuackItemDefinition> AllQuackItems = new List<QuackItemDefinition>
         {
@@ -1140,7 +1189,8 @@ namespace TarkovStimulants.Items
             Stim_xTG12,
             //Stim_SJ15,
             //Stim_ObdolbosN    // 24
-            Item_InjectorCase
+            Item_InjectorCase,
+            Item_AutoStimCase
         };
     }
 }
