@@ -2,7 +2,7 @@
     "Stim_eTGc":"eTG-change再生兴奋剂",
     "Stim_eTGc_Desc":"强大的再生过程促进剂。用于伤员受伤后或重伤员运输过程中的快速恢复，只允许专业医师和护理人员使用。有强副作用。",
     "TarkovStimulants_eTGc_Buff": "eTG-c",
-    "TarkovStimulants_eTGc_Buff_Desc": "超强生命再生（20%/s），降低 20% 代谢消耗与全元素伤害；65秒后进入极度虚弱。",
+    "TarkovStimulants_eTGc_Buff_Desc": "超强生命再生（20%/s），降低 20% 代谢消耗与 10% 全元素伤害；20秒后进入极度虚弱。",
     "TarkovStimulants_eTGc_Debuff": "eTG-c 副作用",
     "TarkovStimulants_eTGc_Debuff_Desc": "机体代偿性衰竭：体力上限降低 30，能量极速流失。",
 
@@ -14,12 +14,12 @@
     "Stim_Propital":"Propital",
     "Stim_Propital_Desc":"军用药物。通过增加嘌呤和嘧啶碱基、RNA、功能性酶促细胞元素的生物合成来刺激再生过程。能够增加新陈代谢、健康和生命力。",
     "TarkovStimulants_Propital_Buff": "Propital",
-    "TarkovStimulants_Propital_Buff_Desc": "最大生命值增加 20，每秒恢复 4% 生命并降低 10% 代谢消耗；200秒后触发副作用。",
+    "TarkovStimulants_Propital_Buff_Desc": "最大生命值增加 20，每秒恢复 2% 生命并降低 10% 代谢消耗；副作用造成震颤和管视效应。",
 
     "Stim_SJ6":"SJ6 TGLabs战斗兴奋剂",
     "Stim_SJ6_Desc":"战斗兴奋剂。在战斗前注射能够提高身体能力。兴奋剂被允许供特种作战单位使用。由Terra集团 Labs开发，上面有SJ6的标记。",
     "TarkovStimulants_SJ6_Buff": "SJ6 TGLabs",
-    "TarkovStimulants_SJ6_Buff_Desc": "体力上限增加 50，耐力恢复速度提升 30% 且等待时间缩短 20%，提升 10% 移速。",
+    "TarkovStimulants_SJ6_Buff_Desc": "体力上限增加 50，耐力恢复速度提升 30% 且等待时间缩短 20%，提升 20% 移速。",
 
     "Stim_MULE":"M.U.L.E. 兴奋剂",
     "Stim_MULE_Desc":"肌肉超大型激励器。它被用来在长途行军之前扩展身体的能力。它能使身体长时间承受更多的重量。",
@@ -36,7 +36,7 @@
     "Stim_Meldonin":"Meldonin",
     "Stim_Meldonin_Desc":"为运动员研制的药物。让你在进行更密集的训练时恢复得更快。暂时增加力量，耐力，并加速恢复。",
     "TarkovStimulants_Meldonin_Buff": "Meldonin",
-    "TarkovStimulants_Meldonin_Buff_Desc": "体力上限增加 20，提升 10% 的耐力恢复速度与近战伤害。",
+    "TarkovStimulants_Meldonin_Buff_Desc": "体力上限增加 20，提升 20% 的耐力恢复速度与近战伤害，提升 30% 机动性能。副作用为能量水分加速流失。",
 
     "Stim_Morphine":"吗啡",
     "Stim_Morphine_Desc":"装满大剂量吗啡的一次性注射器，主要用于处理急性和慢性的重度疼痛。",
@@ -56,7 +56,7 @@
     "Stim_Perfotoran":"人造血注射器",
     "Stim_Perfotoran_Desc":"一种能够转运氧气的血液替代品，被用作中毒、辐射的超级解药。",
     "TarkovStimulants_Perfotoran_Buff": "人造血",
-    "TarkovStimulants_Perfotoran_Buff_Desc": "持续生命再生（8%/s），移除流血并获得短效中毒免疫。",
+    "TarkovStimulants_Perfotoran_Buff_Desc": "持续生命再生（4%/s），移除流血并获得短效中毒免疫。",
 
     "Stim_2A2bTG":"2A2-(b-TG)兴奋剂",
     "Stim_2A2bTG_Desc":"TerraGroup继3-(b-TG)之后的又一款新产品。项目旨在创造一种提供战斗支撑的药物。",
@@ -66,27 +66,27 @@
     "Stim_P22":"P22兴奋剂",
     "Stim_P22_Desc":"战斗兴奋剂。促使内部肌肉包含被动，使身体组织受到较少的损伤。",
     "TarkovStimulants_P22_Buff": "P22",
-    "TarkovStimulants_P22_Buff_Desc": "获得物理减伤并增加 40 最大生命值；代价是降低 20 体力上限与 20% 恢复速度。",
+    "TarkovStimulants_P22_Buff_Desc": "获得物理减伤并增加 40 最大生命值；代价是降低 20 体力上限与 20% 体力恢复速度。",
 
     "Stim_Obdolbos2":"Obdolbos 2",
     "Stim_Obdolbos2_Desc":"Sanitar自制药剂的全新版本。包含了多种极端的生理刺激成分。",
     "TarkovStimulants_Obdolbos2_Buff": "Obdolbos2",
-    "TarkovStimulants_Obdolbos2_Buff_Desc": "全能战神：负重+60%，移速+20%，伤害大幅提升，增强垂钓运气。代价是持续生命流失与耐力惩罚。",
+    "TarkovStimulants_Obdolbos2_Buff_Desc": "负重+60%，移速+50%，伤害大幅提升，增强垂钓运气。代价是持续生命流失与耐力惩罚。",
 
     "Stim_Trimadol":"曲马多注射器",
     "Stim_Trimadol_Desc":"阿片类镇痛剂，除了镇痛效果，它还能提高战斗能力。",
     "TarkovStimulants_Trimadol_Buff": "曲马多",
-    "TarkovStimulants_Trimadol_Buff_Desc": "机能爆发：耐力恢复速度翻倍，移速提升 30%，体力增加 20，且耐力恢复等待减半。",
+    "TarkovStimulants_Trimadol_Buff_Desc": "机能爆发：耐力恢复速度翻倍，移速提升 30%，体力增加 20，且耐力恢复等待减半。副作用会导致能量水分快速流失。",
 
     "Stim_SJ1":"SJ1 TGLabs战斗兴奋剂",
     "Stim_SJ1_Desc":"在战斗前注射能够获得力量和耐力。由Terra集团 Labs开发。",
     "TarkovStimulants_SJ1_Buff": "SJ1 TGLabs",
-    "TarkovStimulants_SJ1_Buff_Desc": "枪械伤害大幅提升 30%，提升 10% 移速，并获得少量物理减伤与代谢负担。",
+    "TarkovStimulants_SJ1_Buff_Desc": "枪械伤害大幅提升 30%，提升 20% 移速，并获得少量物理减伤与代谢负担。",
 
     "Stim_Zagustin":"Zagustin止血剂",
     "Stim_Zagustin_Desc":"军用药物，暂时止血并且增加流血抗性。有导致严重脱水的副作用。",
     "TarkovStimulants_Zagustin_Buff": "Zagustin",
-    "TarkovStimulants_Zagustin_Buff_Desc": "获得流血免疫效果，增加 30 最大生命值；药效期间水分消耗速率显著提升。",
+    "TarkovStimulants_Zagustin_Buff_Desc": "获得流血免疫效果，增加 25 最大生命值；药效期间水分消耗速率显著提升。",
 
     "Stim_SJ9":"SJ9 TGLabs战斗兴奋剂",
     "Stim_SJ9_Desc":"短时间内降低体温，减缓代谢。让人体在热成像仪器下几乎不可见。",
@@ -96,7 +96,7 @@
     "TarkovStimulants_Tremor_Debuff": "震颤",
     "TarkovStimulants_Tremor_Debuff_Desc": "生理机能紊乱：枪械散布增加 30%，后座力控制能力下降 30%。",
     "TarkovStimulants_TunnelVision_Debuff": "管视效应",
-    "TarkovStimulants_TunnelVision_Debuff_Desc": "视野受限：视野角度暂时降低 50%。",
+    "TarkovStimulants_TunnelVision_Debuff_Desc": "视野受限：视野角度暂时降低 70%。",
     "TarkovStimulants_InstantDeath_Debuff": "即死",
     "TarkovStimulants_InstantDeath_Debuff_Desc": "器官衰竭：生命值正在迅速归零。"
 }
