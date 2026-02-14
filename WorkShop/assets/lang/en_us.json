@@ -1,33 +1,33 @@
 {
   "Stim_eTGc": "eTG-change Regenerative Stimulant",
-  "Stim_eTGc_Desc": "A powerful regenerative process enhancer. Used for rapid recovery after injury or during the transport of critically wounded patients. Authorized for use by professional physicians and medical personnel only. Causes severe side effects.",
+  "Stim_eTGc_Desc": "A powerful regeneration enhancer. Used for rapid recovery after injury or during transport of critically wounded patients. Authorized for professional medical personnel only. Has severe side effects.",
   "TarkovStimulants_eTGc_Buff": "eTG-c",
   "TarkovStimulants_eTGc_Buff_Desc": "Extreme health regeneration (20%/s), reduces metabolism consumption by 20% and all elemental damage taken by 10%; enters severe weakness after 20 seconds.",
   "TarkovStimulants_eTGc_Debuff": "eTG-c Side Effect",
-  "TarkovStimulants_eTGc_Debuff_Desc": "Compensatory organ failure: -30 maximum stamina and rapid energy drain.",
+  "TarkovStimulants_eTGc_Debuff_Desc": "Compensatory systemic failure: -30 max stamina and rapid energy drain.",
 
   "Stim_SJ12": "SJ12 TGLabs Combat Stimulant",
-  "Stim_SJ12_Desc": "Designed for special operations personnel. Temporarily suppresses certain bodily functions to restore stamina. Forces the hypothalamus to secrete vasopressin, altering adrenal activity, lowering body temperature, and enhancing perception.",
+  "Stim_SJ12_Desc": "Designed for special operations personnel. Suppresses certain bodily functions to redirect resources toward stamina recovery. Forces the hypothalamus to secrete vasopressin, altering adrenal activity, lowering body temperature, and enhancing perception.",
   "TarkovStimulants_SJ12_Buff": "SJ12 TGLabs",
-  "TarkovStimulants_SJ12_Buff_Desc": "Increases detection range by 30% and continuously restores energy and hydration during the effect.",
+  "TarkovStimulants_SJ12_Buff_Desc": "Increases detection range by 3m and continuously restores energy and hydration during the effect.",
 
   "Stim_Propital": "Propital",
   "Stim_Propital_Desc": "A military drug that stimulates regeneration by increasing the biosynthesis of purine and pyrimidine bases, RNA, and functional enzymatic cellular elements. Enhances metabolism, health, and vitality.",
   "TarkovStimulants_Propital_Buff": "Propital",
-  "TarkovStimulants_Propital_Buff_Desc": "Increases max health by 20, restores 2% HP per second, and reduces metabolism consumption by 10%; side effects cause tremors and tunnel vision.",
+  "TarkovStimulants_Propital_Buff_Desc": "Increases max health by 20, restores 2% HP per second, and reduces metabolism consumption by 10%; side effects cause Tremor and Tunnel Vision.",
 
   "Stim_SJ6": "SJ6 TGLabs Combat Stimulant",
-  "Stim_SJ6_Desc": "A combat stimulant injected before battle to enhance physical capabilities. Authorized for use by special operations units. Developed by TerraGroup Labs and marked SJ6.",
+  "Stim_SJ6_Desc": "A combat stimulant injected before battle to enhance physical performance. Authorized for special operations units. Developed by TerraGroup Labs and marked SJ6.",
   "TarkovStimulants_SJ6_Buff": "SJ6 TGLabs",
   "TarkovStimulants_SJ6_Buff_Desc": "Increases max stamina by 50, boosts stamina recovery speed by 30% and reduces recovery delay by 20%, and increases movement speed by 20%.",
 
   "Stim_MULE": "M.U.L.E. Stimulant",
-  "Stim_MULE_Desc": "Muscle Ultra-Large Enhancer. Used before long marches to expand physical capabilities, allowing the body to carry more weight for extended periods.",
+  "Stim_MULE_Desc": "Muscle Ultra-Large Enhancer. Used before long marches to expand physical capacity, allowing the body to carry more weight for extended periods.",
   "TarkovStimulants_MULE_Buff": "M.U.L.E.",
-  "TarkovStimulants_MULE_Buff_Desc": "Doubles carry weight limit (+100%) at the cost of continuous minor health loss.",
+  "TarkovStimulants_MULE_Buff_Desc": "Doubles carry weight limit (+100%) at the cost of continuous minor health drain.",
 
   "Stim_Adrenaline": "Adrenaline Injector",
-  "Stim_Adrenaline_Desc": "A disposable sterile syringe containing a dose of adrenaline. Used to enhance physiological responses and prepare the body for intense muscular activity.",
+  "Stim_Adrenaline_Desc": "A disposable sterile syringe containing a dose of adrenaline. Used to enhance physiological responses and prepare the body for intense physical activity.",
   "TarkovStimulants_Adrenaline_Buff": "Adrenaline",
   "TarkovStimulants_Adrenaline_Buff_Desc": "Rapid regeneration for the first 15 seconds (10%/s), +10% firearm damage and stamina recovery; triggers weakness after 50 seconds.",
   "TarkovStimulants_Adrenaline_Debuff": "Adrenaline Side Effect",
@@ -41,17 +41,17 @@
   "Stim_Morphine": "Morphine",
   "Stim_Morphine_Desc": "A disposable syringe filled with a high dose of morphine, primarily used to treat severe acute and chronic pain.",
   "TarkovStimulants_Morphine_Buff": "Morphine",
-  "TarkovStimulants_Morphine_Buff_Desc": "Long-lasting pain relief and prevention of fractures and trauma states.",
+  "TarkovStimulants_Morphine_Buff_Desc": "Long-lasting pain relief and prevents fracture and trauma states.",
 
   "Stim_L1": "L1 (Norepinephrine)",
   "Stim_L1_Desc": "A disposable sterile syringe containing L1, primarily norepinephrine. Used for short-term boosts to strength and endurance.",
   "TarkovStimulants_L1_Buff": "L1 - Norepinephrine",
-  "TarkovStimulants_L1_Buff_Desc": "Increases max stamina by 20, boosts stamina recovery speed and firearm damage by 20%, with significant metabolic strain.",
+  "TarkovStimulants_L1_Buff_Desc": "Increases max stamina by 20, boosts stamina recovery speed and firearm damage by 20%, increases firearm control by 50%, with significant metabolic strain.",
 
   "Stim_3bTG": "3-(b-TG) Stimulant",
-  "Stim_3bTG_Desc": "A combat drug that stimulates the central nervous system, increasing perception and attention.",
-  "TarkovStimulants_3bTG_Buff": "3-(b-TG)",
-  "TarkovStimulants_3bTG_Buff_Desc": "Increases detection range by 50%, boosts firearm damage and stamina recovery by 10%, greatly increases fishing luck; triggers side effects after 120 seconds.",
+  "Stim_3bTG_Desc": "A combat drug that stimulates the central nervous system, increasing perception and focus.",
+  "TarkovStimulants_Stim_3bTG_Buff": "3-(b-TG)",
+  "TarkovStimulants_Stim_3bTG_Buff_Desc": "Increases detection range by 5m, boosts firearm damage and stamina recovery by 10%, greatly increases fishing luck; triggers side effects after 120 seconds.",
 
   "Stim_Perfotoran": "Artificial Blood Injector",
   "Stim_Perfotoran_Desc": "A blood substitute capable of transporting oxygen, used as a super antidote for poisoning and radiation.",
@@ -59,14 +59,14 @@
   "TarkovStimulants_Perfotoran_Buff_Desc": "Continuous regeneration (4%/s), removes bleeding and grants short-term poison immunity.",
 
   "Stim_2A2bTG": "2A2-(b-TG) Stimulant",
-  "Stim_2A2bTG_Desc": "A new TerraGroup product following 3-(b-TG). Designed to provide enhanced combat support.",
-  "TarkovStimulants_2A2bTG_Buff": "2A2-(b-TG)",
-  "TarkovStimulants_2A2bTG_Buff_Desc": "Increases carry weight limit by 15% and detection range by 10%, significantly improves fishing efficiency.",
+  "Stim_2A2bTG_Desc": "A new TerraGroup product following 3-(b-TG), designed to provide enhanced combat support.",
+  "TarkovStimulants_Stim_2A2bTG_Buff": "2A2-(b-TG)",
+  "TarkovStimulants_Stim_2A2bTG_Buff_Desc": "Increases carry weight limit by 15% and detection range by 2.5m, significantly improves fishing efficiency.",
 
   "Stim_P22": "P22 Stimulant",
   "Stim_P22_Desc": "A combat stimulant that passively reinforces internal muscles, reducing tissue damage.",
   "TarkovStimulants_P22_Buff": "P22",
-  "TarkovStimulants_P22_Buff_Desc": "Grants physical damage reduction and +40 max health; reduces max stamina by 20 and stamina recovery speed by 20%.",
+  "TarkovStimulants_P22_Buff_Desc": "Grants 25% physical damage reduction and +40 max health; reduces max stamina by 40 and stamina recovery speed by 20%.",
 
   "Stim_Obdolbos2": "Obdolbos 2",
   "Stim_Obdolbos2_Desc": "A new version of Sanitar's homemade drug, containing multiple extreme physiological stimulants.",
@@ -76,12 +76,12 @@
   "Stim_Trimadol": "Trimadol Injector",
   "Stim_Trimadol_Desc": "An opioid analgesic that not only relieves pain but also enhances combat capability.",
   "TarkovStimulants_Trimadol_Buff": "Trimadol",
-  "TarkovStimulants_Trimadol_Buff_Desc": "Overdrive: doubles stamina recovery speed, +30% movement speed, +20 stamina, and halves stamina recovery delay. Side effect: rapid energy and hydration loss.",
+  "TarkovStimulants_Trimadol_Buff_Desc": "Doubles stamina recovery speed, +30% movement speed, +20 stamina, and halves stamina recovery delay. Side effect: rapid energy and hydration loss.",
 
   "Stim_SJ1": "SJ1 TGLabs Combat Stimulant",
   "Stim_SJ1_Desc": "Injected before combat to gain strength and endurance. Developed by TerraGroup Labs.",
   "TarkovStimulants_SJ1_Buff": "SJ1 TGLabs",
-  "TarkovStimulants_SJ1_Buff_Desc": "Greatly increases firearm damage by 30%, +20% movement speed, minor physical damage reduction, and metabolic strain.",
+  "TarkovStimulants_SJ1_Buff_Desc": "Greatly increases firearm damage by 30%, +50% firearm control, -30% weapon spread, +20% movement speed, with minor physical damage reduction and metabolic strain.",
 
   "Stim_Zagustin": "Zagustin Hemostatic",
   "Stim_Zagustin_Desc": "A military drug that temporarily stops bleeding and increases bleeding resistance. Causes severe dehydration as a side effect.",
@@ -91,7 +91,7 @@
   "Stim_SJ9": "SJ9 TGLabs Combat Stimulant",
   "Stim_SJ9_Desc": "Temporarily lowers body temperature and slows metabolism, making the user nearly invisible to thermal imaging.",
   "TarkovStimulants_SJ9_Buff": "SJ9 TGLabs",
-  "TarkovStimulants_SJ9_Buff_Desc": "\"Cold-Blooded\" state: detection distance reduced by 50% and metabolism consumption reduced by 30%, at the cost of gradual health drain.",
+  "TarkovStimulants_SJ9_Buff_Desc": "\"Cold-Blooded\" state: detection distance halved and metabolism consumption reduced by 30%, at the cost of gradual health drain.",
 
   "Stim_AHF1M": "AHF1-M Stimulant",
   "Stim_AHF1M_Desc": "A military drug based on human anti-hemophilic factor. A powerful coagulant that temporarily stops bleeding and increases resistance to bleeding. Causes dehydration during effect.",
@@ -104,7 +104,7 @@
   "TarkovStimulants_Obdolbos_Buff_Desc": "Chaotic biochemical reaction: each bonus (mobility, firepower, luck, damage reduction) has an independent 25% chance to trigger, with a 25% chance of instant death.",
 
   "Stim_PNB": "PNB Muscle Stimulant",
-  "Stim_PNB_Desc": "A combat stimulant codenamed PNB. Temporarily activates internal muscles into a high-permeability state, greatly enhancing explosive power and regeneration. Causes weakness after effect ends.",
+  "Stim_PNB_Desc": "A combat stimulant codenamed PNB. Temporarily activates internal muscles into a high-permeability state, greatly enhancing explosive power and regeneration, but causes weakness after the effect ends.",
   "TarkovStimulants_PNB_Buff": "PNB",
   "TarkovStimulants_PNB_Buff_Desc": "Burst phase: +30% firearm damage and restores 8% HP per second; triggers weakness after 35 seconds (-15 max health).",
   "TarkovStimulants_PNB_Debuff": "PNB Side Effect",
@@ -118,10 +118,10 @@
   "Stim_SJ15": "SJ15 \"Apex\" Stimulant",
   "Stim_SJ15_Desc": "A top-tier military combat drug that pushes the body to its absolute limits, granting unparalleled mobility, carry capacity, and regeneration. A last resort—side effects are often fatal.",
   "TarkovStimulants_SJ15_Buff": "SJ15 Apex",
-  "TarkovStimulants_SJ15_Buff_Desc": "War God Mode: +50 max health and stamina, +50% movement speed and carry weight, rapid regeneration and immunity to bleeding/poison. 50% chance of sudden death before effect ends.",
+  "TarkovStimulants_SJ15_Buff_Desc": "Max health and stamina +50, movement speed and carry weight +50%, rapid regeneration and immunity to bleeding/poison. 50% chance of sudden death before the effect ends.",
 
   "Stim_ObdolbosN": "Obdolbos N Cocktail",
-  "Stim_ObdolbosN_Desc": "An improved model of Obdolbos, codenamed \"N.\" Focuses on enhancing charisma and negotiation ability, but retains extreme biochemical instability.",
+  "Stim_ObdolbosN_Desc": "An improved model of Obdolbos, codenamed \"N.\" Focuses on enhancing charisma and negotiation ability, while retaining extreme biochemical instability.",
   "TarkovStimulants_ObdolbosN_Buff": "Obdolbos N",
   "TarkovStimulants_ObdolbosN_Buff_Desc": "Commercial Fraud: greatly increases charisma and significantly improves trader prices. Warning: 25% chance of sudden death due to organ failure.",
 
@@ -129,7 +129,7 @@
   "TarkovStimulants_Tremor_Debuff_Desc": "Physiological instability: +30% weapon spread and -30% recoil control.",
 
   "TarkovStimulants_TunnelVision_Debuff": "Tunnel Vision",
-  "TarkovStimulants_TunnelVision_Debuff_Desc": "Restricted vision: field of view reduced by 70%.",
+  "TarkovStimulants_TunnelVision_Debuff_Desc": "Restricted vision: field of view temporarily reduced by 70%.",
 
   "TarkovStimulants_InstantDeath_Debuff": "Instant Death",
   "TarkovStimulants_InstantDeath_Debuff_Desc": "Organ failure: health rapidly drops to zero."

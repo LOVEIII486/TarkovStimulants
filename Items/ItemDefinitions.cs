@@ -666,7 +666,7 @@ namespace TarkovStimulants.Items
                 MerchantID = MerchantIDs.Mud,
                 MaxStock = 1,
                 PriceFactor = 1.0f,
-                Probability = 0.5f,
+                Probability = 1.0f,
                 ForceUnlock = true
             }
         };
@@ -852,7 +852,7 @@ namespace TarkovStimulants.Items
                 MerchantID = MerchantIDs.Mud,
                 MaxStock = 1,
                 PriceFactor = 1.0f,
-                Probability = 0.7f,
+                Probability = 1.0f,
                 ForceUnlock = true
             }
         };
@@ -928,7 +928,7 @@ namespace TarkovStimulants.Items
                 MerchantID = MerchantIDs.Mud,
                 MaxStock = 1,
                 PriceFactor = 1.0f,
-                Probability = 0.5f,
+                Probability = 1.0f,
                 ForceUnlock = true
             }
         };
@@ -1004,7 +1004,7 @@ namespace TarkovStimulants.Items
                 MerchantID = MerchantIDs.Mud,
                 MaxStock = 1,
                 PriceFactor = 1.0f,
-                Probability = 0.8f,
+                Probability = 1.0f,
                 ForceUnlock = true
             }
         };
@@ -1042,7 +1042,7 @@ namespace TarkovStimulants.Items
                 MerchantID = MerchantIDs.Mud,
                 MaxStock = 1,
                 PriceFactor = 1.0f,
-                Probability = 0.3f,
+                Probability = 1.0f,
                 ForceUnlock = true
             }
         };

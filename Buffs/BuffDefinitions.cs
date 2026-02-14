@@ -80,7 +80,7 @@ namespace TarkovStimulants.Buffs
         public static readonly QuackBuffDefinition SJ12_Buff =
             new QuackBuffDefinition(new QuackBuffFactory.BuffConfig("TarkovStimulants", "SJ12_Buff", 999102, 360f,
                     GetIconPath("SJ12")))
-                .AddEffect(new AttributeModifierEffect(ModifierKeyConstant.Stat.SenseRange, 1.3f, true))
+                .AddEffect(new AttributeModifierEffect(ModifierKeyConstant.Stat.SenseRange, 3.0f, false))
                 .AddCustomLogic(new EnegyWaterRestoreLogic(0.15f, 0.25f));
 
         // 3. Propital (普罗皮醛)
@@ -204,6 +204,7 @@ namespace TarkovStimulants.Buffs
                 .AddEffect(new AttributeModifierEffect(ModifierKeyConstant.Stat.Stamina, 20f, false))
                 .AddEffect(new AttributeModifierEffect(ModifierKeyConstant.Stat.GunDamageMultiplier, 1.2f, true))
                 .AddEffect(new AttributeModifierEffect(ModifierKeyConstant.Stat.StaminaRecoverRate, 1.2f, true))
+                .AddEffect(new AttributeModifierEffect(ModifierKeyConstant.Stat.RecoilControl, 1.5f, true))
                 .AddCustomLogic(new EnegyWaterRestoreLogic(-0.06f, -0.06f, 2f));
 
         // 10. Stim_3bTG (感知针)
@@ -213,9 +214,9 @@ namespace TarkovStimulants.Buffs
         /// 120秒延迟；120秒持续时间:能量恢复（-0.2/秒）220秒延迟；45秒持续时间: 造成:震颤
         /// </summary>
         public static readonly QuackBuffDefinition Stim_3bTG_Buff =
-            new QuackBuffDefinition(new QuackBuffFactory.BuffConfig("TarkovStimulants", "Stim_3bTG_Buff", 999110, 180f,
+                new QuackBuffDefinition(new QuackBuffFactory.BuffConfig("TarkovStimulants", "Stim_3bTG_Buff", 999110, 180f,
                     GetIconPath("3-(b-TG)")))
-                .AddEffect(new AttributeModifierEffect(ModifierKeyConstant.Stat.SenseRange, 1.5f, true))
+                .AddEffect(new AttributeModifierEffect(ModifierKeyConstant.Stat.SenseRange, 5f, false))
                 .AddEffect(new AttributeModifierEffect(ModifierKeyConstant.Stat.StaminaRecoverRate, 1.1f, true))
                 .AddEffect(new AttributeModifierEffect(ModifierKeyConstant.Stat.FishingTime, 0.5f, true))
                 .AddEffect(new AttributeModifierEffect(ModifierKeyConstant.Stat.FishingQualityFactor, 2f, true))
@@ -245,7 +246,7 @@ namespace TarkovStimulants.Buffs
                     500f,
                     GetIconPath("2A2-(b-TG)")))
                 .AddEffect(new AttributeModifierEffect(ModifierKeyConstant.Stat.MaxWeight, 1.15f, true))
-                .AddEffect(new AttributeModifierEffect(ModifierKeyConstant.Stat.SenseRange, 1.1f, true))
+                .AddEffect(new AttributeModifierEffect(ModifierKeyConstant.Stat.SenseRange, 2.5f, false))
                 .AddEffect(new AttributeModifierEffect(ModifierKeyConstant.Stat.FishingTime, 0.7f, true))
                 .AddEffect(new AttributeModifierEffect(ModifierKeyConstant.Stat.FishingQualityFactor, 1.3f, true));
 
@@ -260,7 +261,7 @@ namespace TarkovStimulants.Buffs
                     GetIconPath("P22")))
                 .AddEffect(new AttributeModifierEffect(ModifierKeyConstant.Stat.ElementFactor_Physics, -0.25f, true))
                 .AddEffect(new AttributeModifierEffect(ModifierKeyConstant.Stat.MaxHealth, 40f, false))
-                .AddEffect(new AttributeModifierEffect(ModifierKeyConstant.Stat.Stamina, -20f, false))
+                .AddEffect(new AttributeModifierEffect(ModifierKeyConstant.Stat.Stamina, -40f, false))
                 .AddEffect(new AttributeModifierEffect(ModifierKeyConstant.Stat.StaminaRecoverRate, 0.8f, true));
 
         // 14. Obdolbos 2 (鸡尾酒2)
@@ -274,7 +275,7 @@ namespace TarkovStimulants.Buffs
                     GetIconPath("Obdolbos 2")))
                 .AddEffect(new AttributeModifierEffect(ModifierKeyConstant.Stat.MaxWeight, 1.5f, true))
                 .AddEffect(new AttributeModifierEffect(ModifierKeyConstant.Stat.RunSpeed, 1.5f, true))
-                .AddEffect(new AttributeModifierEffect(ModifierKeyConstant.Stat.SenseRange, 1.5f, true))
+                .AddEffect(new AttributeModifierEffect(ModifierKeyConstant.Stat.SenseRange, 3.0f, false))
                 .AddEffect(new AttributeModifierEffect(ModifierKeyConstant.Stat.FishingTime, 0.5f, true))
                 .AddEffect(new AttributeModifierEffect(ModifierKeyConstant.Stat.FishingQualityFactor, 1.7f, true))
                 .AddEffect(new AttributeModifierEffect(ModifierKeyConstant.Stat.GunDamageMultiplier, 1.4f, true))
@@ -313,6 +314,8 @@ namespace TarkovStimulants.Buffs
                 .AddEffect(new AttributeModifierEffect(ModifierKeyConstant.Stat.RunSpeed, 1.2f, true))
                 .AddEffect(new AttributeModifierEffect(ModifierKeyConstant.Stat.ElementFactor_Physics, -0.1f, false))
                 .AddEffect(new AttributeModifierEffect(ModifierKeyConstant.Stat.GunDamageMultiplier, 1.3f, true))
+                .AddEffect(new AttributeModifierEffect(ModifierKeyConstant.Stat.RecoilControl, 1.5f, true))
+                .AddEffect(new AttributeModifierEffect(ModifierKeyConstant.Stat.GunScatterMultiplier, 0.7f, true))
                 .AddEffect(new AttributeModifierEffect(ModifierKeyConstant.Stat.EnergyCost, 1.1f, true))
                 .AddEffect(new AttributeModifierEffect(ModifierKeyConstant.Stat.WaterCost, 1.1f, true));
 
