@@ -19,6 +19,8 @@ namespace TarkovStimulants
         private Harmony _harmony;
         private bool _isPatched = false;
         private bool _hooksInitialized = false;
+        
+        private bool _isApplicationQuitting = false;
 
         #region Unity Lifecycle
 
@@ -45,13 +47,20 @@ namespace TarkovStimulants
 
         private void OnDisable()
         {
-            UnregisterAllContent();
             RemoveHarmonyPatches();
+            
+            if (_isApplicationQuitting) return;
+            UnregisterAllContent();
         }
 
         private void OnDestroy()
         {
             DisposeSingleton();
+        }
+        
+        private void OnApplicationQuit()
+        {
+            _isApplicationQuitting = true;
         }
 
         #endregion
