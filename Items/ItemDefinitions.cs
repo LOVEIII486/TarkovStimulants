@@ -271,11 +271,11 @@ namespace TarkovStimulants.Items
                 FormulaID = "formula_MULE_craft",
                 Materials = new List<(int itemId, long count)>
                 {
-                    (136, 3L), 
-                    (88, 2L), 
+                    (136, 1L), 
+                    (88, 1L), 
                     (999008, 1L)
                 },
-                ResultCount = 3,
+                ResultCount = 1,
                 Workbenches = new string[] { WorkbenchIDs.MedicStation },
                 UnlockByDefault = true
             }
@@ -366,7 +366,7 @@ namespace TarkovStimulants.Items
             Crafting = new QuackItemDefinition.CraftingConfig
             {
                 FormulaID = "formula_Meldonin_craft",
-                Materials = new List<(int itemId, long count)> { (136, 3L), (137, 4L), (1180, 1L) },
+                Materials = new List<(int itemId, long count)> { (136, 3L), (137, 3L), (1180, 1L) },
                 ResultCount = 3,
                 Workbenches = new string[] { WorkbenchIDs.MedicStation },
                 UnlockByDefault = true
@@ -491,7 +491,7 @@ namespace TarkovStimulants.Items
                     behaviors = new List<UsageBehaviorData>
                     {
                         new FoodData { energyValue = -10f },
-                        new QuackAddBuffData { buffName = "TarkovStimulants_3bTG_Buff", chance = 1.0f }
+                        new QuackAddBuffData { buffName = "TarkovStimulants_Stim_3bTG_Buff", chance = 1.0f }
                     }
                 }
             },
@@ -1095,7 +1095,7 @@ namespace TarkovStimulants.Items
             Stim_Obdolbos,
             Stim_PNB,
             Stim_xTG12,
-            Stim_SJ15,
+            //Stim_SJ15,
             //Stim_ObdolbosN    // 24
         };
     }

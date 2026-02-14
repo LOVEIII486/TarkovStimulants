@@ -369,7 +369,7 @@ namespace TarkovStimulants.Buffs
         /// 1秒延迟；600秒持续时间:25%几率:能量恢复（-1/秒）25%几率:水分恢复（-1/秒）25%几率:生命恢复（-600/秒）25%几率:受到伤害（头部除外）（+20%）25%几率:造成:致死
         /// </summary>
         public static readonly QuackBuffDefinition Obdolbos_Buff =
-            new QuackBuffDefinition(new QuackBuffFactory.BuffConfig("TarkovStimulants", "Obdolbos_Buff", 999120, 3f,
+            new QuackBuffDefinition(new QuackBuffFactory.BuffConfig("TarkovStimulants", "Obdolbos_Buff", 999120, 600f,
                     GetIconPath("Obdolbos")))
                 .AddCustomLogic(new ProbabilityModifierLogic(
                     // --- 正面效果 (25% 几率) ---

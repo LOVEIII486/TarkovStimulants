@@ -50,8 +50,8 @@
 
     "Stim_3bTG":"3-(b-TG)兴奋剂",
     "Stim_3bTG_Desc":"战斗药物。它对中枢神经系统有刺激作用，可增加感知和注意力。",
-    "TarkovStimulants_3bTG_Buff": "3-(b-TG)",
-    "TarkovStimulants_3bTG_Buff_Desc": "感知距离提升 50%，枪械伤害与耐力恢复提升 10%，极大增加垂钓运气；120秒后触发副作用。",
+    "TarkovStimulants_Stim_3bTG_Buff": "3-(b-TG)",
+    "TarkovStimulants_Stim_3bTG_Buff_Desc": "感知距离提升 50%，枪械伤害与耐力恢复提升 10%，极大增加垂钓运气；120秒后触发副作用。",
 
     "Stim_Perfotoran":"人造血注射器",
     "Stim_Perfotoran_Desc":"一种能够转运氧气的血液替代品，被用作中毒、辐射的超级解药。",
@@ -60,8 +60,8 @@
 
     "Stim_2A2bTG":"2A2-(b-TG)兴奋剂",
     "Stim_2A2bTG_Desc":"TerraGroup继3-(b-TG)之后的又一款新产品。项目旨在创造一种提供战斗支撑的药物。",
-    "TarkovStimulants_2A2bTG_Buff": "2A2-(b-TG)",
-    "TarkovStimulants_2A2bTG_Buff_Desc": "提升 15% 负重上限与 10% 感知距离，显著优化垂钓效率。",
+    "TarkovStimulants_Stim_2A2bTG_Buff": "2A2-(b-TG)",
+    "TarkovStimulants_Stim_2A2bTG_Buff_Desc": "提升 15% 负重上限与 10% 感知距离，显著优化垂钓效率。",
 
     "Stim_P22":"P22兴奋剂",
     "Stim_P22_Desc":"战斗兴奋剂。促使内部肌肉包含被动，使身体组织受到较少的损伤。",
