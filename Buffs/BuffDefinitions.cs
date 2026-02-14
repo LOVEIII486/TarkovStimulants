@@ -30,11 +30,11 @@ namespace TarkovStimulants.Buffs
                     10f, GetIconPath("TunnelVision")))
                 .AddEffect(new AttributeModifierEffect(ModifierKeyConstant.Stat.ViewAngle, 0.3f, true));
 
-        // 即死Debuff，持续2s快速掉血
+        // 即死Debuff
         public static readonly QuackBuffDefinition InstantDeath_Debuff =
             new QuackBuffDefinition(new QuackBuffFactory.BuffConfig("TarkovStimulants", "InstantDeath_Debuff", 999303,
-                    1f, GetIconPath("Death")))
-                .AddCustomLogic(new RegenerationLogic(-10.0f, 0.1f, 2f, true));
+                    1f, GetIconPath("InstantDeath")))
+                .AddEffect(new DamageEffect(9999f, true));
 
         #endregion
 
@@ -369,10 +369,9 @@ namespace TarkovStimulants.Buffs
         /// 1秒延迟；600秒持续时间:25%几率:能量恢复（-1/秒）25%几率:水分恢复（-1/秒）25%几率:生命恢复（-600/秒）25%几率:受到伤害（头部除外）（+20%）25%几率:造成:致死
         /// </summary>
         public static readonly QuackBuffDefinition Obdolbos_Buff =
-            new QuackBuffDefinition(new QuackBuffFactory.BuffConfig("TarkovStimulants", "Obdolbos_Buff", 999120, 600f,
+            new QuackBuffDefinition(new QuackBuffFactory.BuffConfig("TarkovStimulants", "Obdolbos_Buff", 999120, 3f,
                     GetIconPath("Obdolbos")))
                 .AddCustomLogic(new ProbabilityModifierLogic(
-                    // 参数顺序：属性字段, 数值, 是否倍率(Multiply), 概率(0-1)
                     // --- 正面效果 (25% 几率) ---
                     new(ModifierKeyConstant.Stat.Stamina, 50f, false, 0.25f), // 耐力
                     new(ModifierKeyConstant.Stat.GunDamageMultiplier, 1.5f, true, 0.25f), // 力量 -> 伤害
@@ -387,7 +386,7 @@ namespace TarkovStimulants.Buffs
                     new(ModifierKeyConstant.Stat.ElementFactor_Physics, 0.25f, false, 0.25f) // 易伤 +20%
                 ))
                 .AddCustomLogic(new DelayedBuffLogic(
-                    ("TarkovStimulants_InstantDeath_Debuff", 1f, 2f, 0.25f)
+                    ("TarkovStimulants_InstantDeath_Debuff", 1f, -1f, 0.25f)
                 ));
         
         // 21. PNB (肌肉针)
@@ -428,21 +427,21 @@ namespace TarkovStimulants.Buffs
         ///
         /// 900s Delay; 5s Duration: 50% Chance: Decreases health regeneration (-600/s)
         /// </summary>
-        public static readonly QuackBuffDefinition SJ15_Buff =
-            new QuackBuffDefinition(new QuackBuffFactory.BuffConfig("TarkovStimulants", "SJ15_Buff", 999123, 600f,
-                    GetIconPath("SJ15")))
-                .AddCustomLogic(new RegenerationLogic(0.1f, 1.0f, -1, false))
-                .AddEffect(new AttributeModifierEffect(ModifierKeyConstant.Stat.MaxHealth, 50f, false))
-                .AddEffect(new AttributeModifierEffect(ModifierKeyConstant.Stat.Stamina, 50f, false))
-                .AddEffect(new AttributeModifierEffect(ModifierKeyConstant.Stat.RunSpeed, 1.5f, true))
-                .AddEffect(new AttributeModifierEffect(ModifierKeyConstant.Stat.WalkSpeed, 1.5f, true))
-                .AddEffect(new AttributeModifierEffect(ModifierKeyConstant.Stat.MaxWeight, 1.5f, true))
-                .AddEffect(new AttributeModifierEffect(ModifierKeyConstant.Stat.ElementFactor_Physics, -0.2f, false))
-                .AddEffect(new ApplyBuffEffect("1019_buff_Injector_BleedResist", 600))
-                .AddCustomLogic(new BuffImmunityLogic(false, 1001, 1002, 1061))
-                .AddCustomLogic(new DelayedBuffLogic(
-                    ("TarkovStimulants_InstantDeath_Debuff", 590f, 2f, 0.5f)
-                ));
+        // public static readonly QuackBuffDefinition SJ15_Buff =
+        //     new QuackBuffDefinition(new QuackBuffFactory.BuffConfig("TarkovStimulants", "SJ15_Buff", 999123, 600f,
+        //             GetIconPath("SJ15")))
+        //         .AddCustomLogic(new RegenerationLogic(0.1f, 1.0f, -1, false))
+        //         .AddEffect(new AttributeModifierEffect(ModifierKeyConstant.Stat.MaxHealth, 50f, false))
+        //         .AddEffect(new AttributeModifierEffect(ModifierKeyConstant.Stat.Stamina, 50f, false))
+        //         .AddEffect(new AttributeModifierEffect(ModifierKeyConstant.Stat.RunSpeed, 1.5f, true))
+        //         .AddEffect(new AttributeModifierEffect(ModifierKeyConstant.Stat.WalkSpeed, 1.5f, true))
+        //         .AddEffect(new AttributeModifierEffect(ModifierKeyConstant.Stat.MaxWeight, 1.5f, true))
+        //         .AddEffect(new AttributeModifierEffect(ModifierKeyConstant.Stat.ElementFactor_Physics, -0.2f, false))
+        //         .AddEffect(new ApplyBuffEffect("1019_buff_Injector_BleedResist", 600))
+        //         .AddCustomLogic(new BuffImmunityLogic(false, 1001, 1002, 1061))
+        //         .AddCustomLogic(new DelayedBuffLogic(
+        //             ("TarkovStimulants_InstantDeath_Debuff", 590f, 2f, 0.5f)
+        //         ));
 
         // // 24. Obdolbos N
         // public static readonly QuackBuffDefinition ObdolbosN_Buff =
@@ -474,7 +473,7 @@ namespace TarkovStimulants.Buffs
             Obdolbos_Buff,
             PNB_Buff, PNB_Debuff,
             xTG12_Buff,
-            SJ15_Buff,
+            //SJ15_Buff,
             //ObdolbosN_Buff,
 
             Tremor_Debuff, TunnelVision_Debuff, InstantDeath_Debuff
