@@ -128,7 +128,7 @@
   "TarkovStimulants_Tremor_Debuff": "Tremor",
   "TarkovStimulants_Tremor_Debuff_Desc": "Physiological instability: +30% weapon spread, -30% recoil control.",
   "TarkovStimulants_TunnelVision_Debuff": "Tunnel Vision",
-  "TarkovStimulants_TunnelVision_Debuff_Desc": "Restricted vision: field of view reduced by 70%.",
+  "TarkovStimulants_TunnelVision_Debuff_Desc": "Restricted vision: field of view reduced by 50%.",
   "TarkovStimulants_InstantDeath_Debuff": "Instant Death",
   "TarkovStimulants_InstantDeath_Debuff_Desc": "Organ failure: health rapidly drops to zero.",
 
@@ -139,5 +139,7 @@
 
   "Item_AutoStimCase": "Tactical Auto-Injector Case",
   "Item_AutoStimCase_Desc": "An integrated tactical injection terminal developed by TerraGroup Labs. Featuring a built-in microprocessor control module and a pneumatic pressure system, it allows the user to instantaneously activate all stored stimulants in extreme environments. While its compact design sacrifices storage capacity, it provides unparalleled reaction speed—in a life-or-death moment, this is your second lease on life.",
-  "Item_AutoStimCase_DisplayFormat": "Auto-Injector Case (Stock: {0}/{1})"
+  "Item_AutoStimCase_DisplayFormat": "Auto-Injector Case (Stock: {0}/{1})",
+  "Quest_AutoStimCase_Name": "Milliseconds of Life and Death",
+  "Quest_AutoStimCase_Desc": "Listen up. In Tarkov, being 'fast' usually means you're breathing, and being 'slow' means you're a rotting carcass. If you want to master a speed that outruns even the sensation of pain, a standard storage case just won't cut it anymore.\n\nThere's a maniac in the Warehouse district called the 'Fast Captain.' He and his inseparable crew have been turning the place upside down, fueled by TerraGroup neuro-stimulants. Rumor has it they're equipped with some black-tech terminal that automates drug delivery—capable of pulling a man back from the brink even a millisecond before his heart stops.\n\nGo take care of the Captain and his lackeys. Prove your reaction time is faster than their chemicals. Bring me back a standard Injector Case and the news of the Captain's demise, and I'll trade you for your own Tactical Auto-Injector Case."
 }

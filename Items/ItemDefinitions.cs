@@ -720,7 +720,7 @@ namespace TarkovStimulants.Items
                 localizationKey = "Stim_SJ1",
                 localizationDesc = "Stim_SJ1_Desc",
                 weight = 0.1f,
-                value = 750,
+                value = 2750,
                 quality = 3,
                 displayQuality = DisplayQuality.Blue,
                 maxStackCount = 3,
@@ -733,7 +733,7 @@ namespace TarkovStimulants.Items
                     useTime = 0.5f,
                     behaviors = new List<UsageBehaviorData>
                     {
-                        new FoodData { energyValue = -8f, waterValue = -14f },
+                        new FoodData { energyValue = -8f, waterValue = -17f },
                         new QuackAddBuffData { buffName = "TarkovStimulants_SJ1_Buff", chance = 1.0f }
                     }
                 }
@@ -741,7 +741,7 @@ namespace TarkovStimulants.Items
             Shop = new QuackItemDefinition.ShopConfig
             {
                 MerchantID = MerchantIDs.Mud,
-                MaxStock = 3,
+                MaxStock = 1,
                 PriceFactor = 1.0f,
                 Probability = 1.0f,
                 ForceUnlock = true

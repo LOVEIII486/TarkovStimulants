@@ -24,11 +24,11 @@ namespace TarkovStimulants.Buffs
                 .AddEffect(new AttributeModifierEffect(ModifierKeyConstant.Stat.GunScatterMultiplier, 1.3f, true))
                 .AddEffect(new AttributeModifierEffect(ModifierKeyConstant.Stat.RecoilControl, 0.7f, true));
 
-        // 管视效应Debuff，减少70%视野角度
+        // 管视效应Debuff，减少50%视野角度
         public static readonly QuackBuffDefinition TunnelVision_Debuff =
             new QuackBuffDefinition(new QuackBuffFactory.BuffConfig("TarkovStimulants", "TunnelVision_Debuff", 999302,
                     10f, GetIconPath("TunnelVision")))
-                .AddEffect(new AttributeModifierEffect(ModifierKeyConstant.Stat.ViewAngle, 0.3f, true));
+                .AddEffect(new AttributeModifierEffect(ModifierKeyConstant.Stat.ViewAngle, 0.5f, true));
 
         // 即死Debuff
         public static readonly QuackBuffDefinition InstantDeath_Debuff =
@@ -309,15 +309,15 @@ namespace TarkovStimulants.Buffs
         /// 100秒延迟；200秒持续时间:能量恢复（-0.2/秒）水分恢复（-0.3/秒）
         /// </summary>
         public static readonly QuackBuffDefinition SJ1_Buff =
-            new QuackBuffDefinition(new QuackBuffFactory.BuffConfig("TarkovStimulants", "SJ1_Buff", 999116, 90f,
+            new QuackBuffDefinition(new QuackBuffFactory.BuffConfig("TarkovStimulants", "SJ1_Buff", 999116, 60f,
                     GetIconPath("SJ1")))
                 .AddEffect(new AttributeModifierEffect(ModifierKeyConstant.Stat.RunSpeed, 1.2f, true))
                 .AddEffect(new AttributeModifierEffect(ModifierKeyConstant.Stat.ElementFactor_Physics, -0.1f, false))
                 .AddEffect(new AttributeModifierEffect(ModifierKeyConstant.Stat.GunDamageMultiplier, 1.3f, true))
                 .AddEffect(new AttributeModifierEffect(ModifierKeyConstant.Stat.RecoilControl, 1.5f, true))
                 .AddEffect(new AttributeModifierEffect(ModifierKeyConstant.Stat.GunScatterMultiplier, 0.7f, true))
-                .AddEffect(new AttributeModifierEffect(ModifierKeyConstant.Stat.EnergyCost, 1.1f, true))
-                .AddEffect(new AttributeModifierEffect(ModifierKeyConstant.Stat.WaterCost, 1.1f, true));
+                .AddEffect(new AttributeModifierEffect(ModifierKeyConstant.Stat.EnergyCost, 1.2f, true))
+                .AddEffect(new AttributeModifierEffect(ModifierKeyConstant.Stat.WaterCost, 1.2f, true));
 
         // 17. Zagustin (止血针)
         /// <summary>

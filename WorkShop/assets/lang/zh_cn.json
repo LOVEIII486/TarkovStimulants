@@ -19,7 +19,7 @@
     "Stim_SJ6":"SJ6 TGLabs战斗兴奋剂",
     "Stim_SJ6_Desc":"战斗兴奋剂。在战斗前注射能够提高身体能力。兴奋剂被允许供特种作战单位使用。由Terra集团 Labs开发，上面有SJ6的标记。",
     "TarkovStimulants_SJ6_Buff": "SJ6 TGLabs",
-    "TarkovStimulants_SJ6_Buff_Desc": "体力上限增加 50，耐力恢复速度提升 30% 且等待时间缩短 20%，提升 20% 移速。",
+    "TarkovStimulants_SJ6_Buff_Desc": "提升 20% 移速，体力上限增加 50，耐力恢复速度提升 30% 且等待时间缩短 20%。",
 
     "Stim_MULE":"M.U.L.E. 兴奋剂",
     "Stim_MULE_Desc":"肌肉超大型激励器。它被用来在长途行军之前扩展身体的能力。它能使身体长时间承受更多的重量。",
@@ -128,7 +128,7 @@
     "TarkovStimulants_Tremor_Debuff": "震颤",
     "TarkovStimulants_Tremor_Debuff_Desc": "生理机能紊乱：枪械散布增加 30%，后座力控制能力下降 30%。",
     "TarkovStimulants_TunnelVision_Debuff": "管视效应",
-    "TarkovStimulants_TunnelVision_Debuff_Desc": "视野受限：视野角度暂时降低 70%。",
+    "TarkovStimulants_TunnelVision_Debuff_Desc": "视野受限：视野角度暂时降低 50%。",
     "TarkovStimulants_InstantDeath_Debuff": "即死",
     "TarkovStimulants_InstantDeath_Debuff_Desc": "器官衰竭：生命值正在迅速归零。",
 
@@ -140,6 +140,6 @@
     "Item_AutoStimCase": "战术自动注射盒",
     "Item_AutoStimCase_Desc": "由 TerraGroup 实验室研发的集成式战术注射终端。内部集成了微电脑控制模块与气动加压装置，允许使用者在极端环境下瞬间激活内部存储的所有针剂。其紧凑的设计虽然牺牲了容量，但提供了无与伦比的反应速度——在生死瞬间，这便是你的第二条命。",
     "Item_AutoStimCase_DisplayFormat": "自动注射盒 (当前存量: {0}/{1})",
-    "Quest_AutoStimCase_Name": "Milliseconds of Life and Death",
-    "Quest_AutoStimCase_Desc": "Listen up. In Tarkov, being 'fast' usually means you're breathing, and being 'slow' means you're a rotting carcass. If you want to master a speed that outruns even the sensation of pain, a standard storage case just won't cut it anymore.\n\nThere's a maniac in the Warehouse district called the 'Fast Captain.' He and his inseparable crew have been turning the place upside down, fueled by TerraGroup neuro-stimulants. Rumor has it they're equipped with some black-tech terminal that automates drug delivery—capable of pulling a man back from the brink even a millisecond before his heart stops.\n\nGo take care of the Captain and his lackeys. Prove your reaction time is faster than their chemicals. Bring me back a standard Injector Case and the news of the Captain's demise, and I'll trade you for your own Tactical Auto-Injector Case."
+    "Quest_AutoStimCase_Name": "生死毫秒",
+    "Quest_AutoStimCase_Desc": "听着。在塔科夫，快通常意味着活着，而慢则意味着变成一具发臭的尸体。如果你想掌握那种连痛觉都赶不上的速度，普通的收纳盒已经不够用了。\n\n仓库区有个叫 疾速团长 的疯子，他和他那几个如影随形的小弟靠着 TerraGroup 的神经兴奋剂把这一带搅得天翻地覆。传闻他们装备了一种能自动给药的黑科技终端，哪怕心脏停跳前的一毫秒也能把人拉回来。\n\n去把那个团长和他的随从处理掉，证明你比他们的药剂反应更快。把收纳盒带回来，并用团长的死讯来换取你的战术自动注射盒。"
 }
