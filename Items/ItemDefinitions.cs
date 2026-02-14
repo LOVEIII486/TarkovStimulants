@@ -720,7 +720,7 @@ namespace TarkovStimulants.Items
                 localizationKey = "Stim_SJ1",
                 localizationDesc = "Stim_SJ1_Desc",
                 weight = 0.1f,
-                value = 2750,
+                value = 1800,
                 quality = 3,
                 displayQuality = DisplayQuality.Blue,
                 maxStackCount = 3,
