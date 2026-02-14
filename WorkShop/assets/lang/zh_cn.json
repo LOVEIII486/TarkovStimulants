@@ -140,6 +140,6 @@
     "Item_AutoStimCase": "战术自动注射盒",
     "Item_AutoStimCase_Desc": "由 TerraGroup 实验室研发的集成式战术注射终端。内部集成了微电脑控制模块与气动加压装置，允许使用者在极端环境下瞬间激活内部存储的所有针剂。其紧凑的设计虽然牺牲了容量，但提供了无与伦比的反应速度——在生死瞬间，这便是你的第二条命。",
     "Item_AutoStimCase_DisplayFormat": "自动注射盒 (当前存量: {0}/{1})",
-    "Quest_AutoStimCase_Name": "瞬间反应",
-    "Quest_AutoStimCase_Desc": "“泥巴”对你的回收能力印象深刻，但他现在想要点更‘激进’的玩意儿。他盯上了实验室里那些精锐游荡者配备的战术自动注射盒。 \n\n比起单纯的储存，那东西更像是一个便携式生命维持终端。泥巴认为这种能瞬间改变战场局势的技术在黑市上会有极高的需求。去实验室的医疗区或行政区搜寻那些携带高级货的家伙，把那套自动系统带回来。"
+    "Quest_AutoStimCase_Name": "Milliseconds of Life and Death",
+    "Quest_AutoStimCase_Desc": "Listen up. In Tarkov, being 'fast' usually means you're breathing, and being 'slow' means you're a rotting carcass. If you want to master a speed that outruns even the sensation of pain, a standard storage case just won't cut it anymore.\n\nThere's a maniac in the Warehouse district called the 'Fast Captain.' He and his inseparable crew have been turning the place upside down, fueled by TerraGroup neuro-stimulants. Rumor has it they're equipped with some black-tech terminal that automates drug delivery—capable of pulling a man back from the brink even a millisecond before his heart stops.\n\nGo take care of the Captain and his lackeys. Prove your reaction time is faster than their chemicals. Bring me back a standard Injector Case and the news of the Captain's demise, and I'll trade you for your own Tactical Auto-Injector Case."
 }
