@@ -130,5 +130,11 @@
     "TarkovStimulants_TunnelVision_Debuff": "管视效应",
     "TarkovStimulants_TunnelVision_Debuff_Desc": "视野受限：视野角度暂时降低 70%。",
     "TarkovStimulants_InstantDeath_Debuff": "即死",
-    "TarkovStimulants_InstantDeath_Debuff_Desc": "器官衰竭：生命值正在迅速归零。"
+    "TarkovStimulants_InstantDeath_Debuff_Desc": "器官衰竭：生命值正在迅速归零。",
+
+    "Item_InjectorCase":"Omega 针剂收纳盒",
+    "Item_InjectorCase_Desc":"顶级战术医疗储存容器。具备高强度抗压轻质外壳与防水密封结构，内部采用军用级减震模块，专为携带大量高价值针剂设计。",
+
+    "Quest_InjectorCase_Name": "高端医疗设备",
+    "Quest_InjectorCase_Desc": "泥巴最近对高端战术医疗设备产生了兴趣。他听说一批用于特种部队的Omega级针剂收纳盒曾流入战区，但现在落在实验室游荡者手中。\n\n这些家伙可不会乖乖交出来。\n\n证明你有能力在混乱中回收高价值物资。清理掉那些游荡者，然后带着诚意来见我。钱只是敲门砖，实力才是通行证。"
 }

@@ -130,5 +130,11 @@
   "TarkovStimulants_TunnelVision_Debuff": "Tunnel Vision",
   "TarkovStimulants_TunnelVision_Debuff_Desc": "Restricted vision: field of view reduced by 70%.",
   "TarkovStimulants_InstantDeath_Debuff": "Instant Death",
-  "TarkovStimulants_InstantDeath_Debuff_Desc": "Organ failure: health rapidly drops to zero."
+  "TarkovStimulants_InstantDeath_Debuff_Desc": "Organ failure: health rapidly drops to zero.",
+
+  "Item_InjectorCase": "Omega Injector Case",
+  "Item_InjectorCase_Desc": "A premium tactical medical storage container. Featuring a high-strength, lightweight pressure-resistant shell with a waterproof seal, the interior utilizes military-grade shock-absorption modules. Specifically designed for transporting a large quantity of high-value stimulants.",
+
+  "Quest_InjectorCase_Name": "High-End Medical Equipment",
+  "Quest_InjectorCase_Desc": "Mud has recently developed an interest in high-end tactical medical gear. He's heard that a batch of special forces-grade Omega Injector Cases was once funneled into the warzone, but they are now in the hands of Laboratory Stragglers.\n\nThose guys aren't just going to hand them over.\n\nProve you have the capability to recover high-value assets amidst the chaos. Clear out those stragglers and come see me with your tribute. Money is just a foot in the door; strength is your true passport."
 }

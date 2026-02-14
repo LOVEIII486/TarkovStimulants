@@ -7,6 +7,7 @@ using UnityEngine.SceneManagement;
 using FastModdingLib;
 using TarkovStimulants.Buffs;
 using TarkovStimulants.Items;
+using TarkovStimulants.Quests;
 
 namespace TarkovStimulants
 {
@@ -166,6 +167,7 @@ namespace TarkovStimulants
         private void UnregisterAllContent()
         {
             ItemRegistry.UnregisterAll();
+            QuestRegistry.UnregisterAll(ModConstant.ModId);
             ModLogger.Log($"{ModConstant.ModName} 内容已卸载。");
         }
 
@@ -173,7 +175,7 @@ namespace TarkovStimulants
 
         private void RegisterItems() => ItemRegistry.RegisterAll(_dllPath);
 
-        private void RegisterQuests() { }
+        private void RegisterQuests() => QuestRegistry.RegisterAll(_dllPath);
 
         #endregion
 
