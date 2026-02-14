@@ -32,7 +32,6 @@ namespace TarkovStimulants
             if (!ValidateDependencies()) return;
             
             ApplyHarmonyPatches();
-            ApplySceneHooks();
         }
 
         protected override void OnAfterSetup()
@@ -46,7 +45,6 @@ namespace TarkovStimulants
         private void OnDisable()
         {
             UnregisterAllContent();
-            RemoveSceneHooks();
             RemoveHarmonyPatches();
         }
 

@@ -12,7 +12,7 @@ namespace TarkovStimulants.Items
                 QuackItemRegistry.Register(modPath, quackItem, ModConstant.ModName);
             }
             
-            ModLogger.Log($"成功注册了 {ItemDefinitions.AllQuackItems.Count} 个物品。");
+            ModLogger.Log($"[TarkovStimulants] 成功注册了 {ItemDefinitions.AllQuackItems.Count} 个物品。");
         }
         
         public static void UnregisterAll()

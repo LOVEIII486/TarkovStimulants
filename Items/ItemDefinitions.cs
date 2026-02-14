@@ -52,8 +52,8 @@ namespace TarkovStimulants.Items
                 Materials = new List<(int itemId, long count)>
                 {
                     (136, 3L), //注射器
-                    (875, 3L), //回复针
-                    (14, 1L) //可乐
+                    (875, 2L), //回复针
+                    (999003, 1L) //Propital
                 },
                 ResultCount = 3,
                 Workbenches = new string[] { WorkbenchIDs.MedicStation },
@@ -218,7 +218,12 @@ namespace TarkovStimulants.Items
             Crafting = new QuackItemDefinition.CraftingConfig
             {
                 FormulaID = "formula_SJ6_craft",
-                Materials = new List<(int itemId, long count)> { (136, 3L), (137, 2L), (88, 2L) },
+                Materials = new List<(int itemId, long count)>
+                {
+                    (136, 2L), 
+                    (137, 2L), 
+                    (88, 2L)
+                },
                 ResultCount = 3,
                 Workbenches = new string[] { WorkbenchIDs.MedicStation },
                 UnlockByDefault = true
@@ -264,7 +269,12 @@ namespace TarkovStimulants.Items
             Crafting = new QuackItemDefinition.CraftingConfig
             {
                 FormulaID = "formula_MULE_craft",
-                Materials = new List<(int itemId, long count)> { (136, 3L), (398, 2L), (84, 1L) },
+                Materials = new List<(int itemId, long count)>
+                {
+                    (136, 3L), 
+                    (88, 2L), 
+                    (999008, 1L)
+                },
                 ResultCount = 3,
                 Workbenches = new string[] { WorkbenchIDs.MedicStation },
                 UnlockByDefault = true
@@ -400,7 +410,23 @@ namespace TarkovStimulants.Items
                 PriceFactor = 1.0f,
                 Probability = 1.0f,
                 ForceUnlock = true
-            }
+            },
+            Crafting = new QuackItemDefinition.CraftingConfig
+            {
+                FormulaID = "formula_Morphine_craft",
+                MoneyCost = 0L,
+                Materials = new List<(int itemId, long count)>
+                {
+                    (136, 1L), //注射器
+                    (20, 1L), //阿司匹林
+                },
+                ResultCount = 1,
+                Workbenches = new string[] { WorkbenchIDs.MedicStation },
+                UnlockByDefault = true,
+                RequirePerk = "",
+                HideInIndex = false,
+                LockInDemo = false
+            },
         };
 
         // 9. L1 (去甲肾上腺素) - 品阶2, 价格880
@@ -558,7 +584,11 @@ namespace TarkovStimulants.Items
             Crafting = new QuackItemDefinition.CraftingConfig
             {
                 FormulaID = "formula_2A2bTG_craft",
-                Materials = new List<(int itemId, long count)> { (999010, 1L), (137, 2L) }, // 使用3bTG作为原材料之一
+                Materials = new List<(int itemId, long count)>
+                {
+                    (999006, 1L), 
+                    (88, 1L)
+                },
                 ResultCount = 1,
                 Workbenches = new string[] { WorkbenchIDs.MedicStation },
                 UnlockByDefault = true
@@ -714,7 +744,25 @@ namespace TarkovStimulants.Items
                 PriceFactor = 1.0f,
                 Probability = 1.0f,
                 ForceUnlock = true
-            }
+            },
+            Crafting = new QuackItemDefinition.CraftingConfig
+            {
+                FormulaID = "formula_SJ1_craft",
+                MoneyCost = 0L,
+                Materials = new List<(int itemId, long count)>
+                {
+                    (136, 1L), //注射器
+                    (88, 1L),
+                    (999003, 1L),
+                    (999008, 1L)
+                },
+                ResultCount = 3,
+                Workbenches = new string[] { WorkbenchIDs.MedicStation },
+                UnlockByDefault = true,
+                RequirePerk = "",
+                HideInIndex = false,
+                LockInDemo = false
+            },
         };
 
         // 17. Zagustin (止血针) - 品阶3, 价格1850
@@ -752,7 +800,23 @@ namespace TarkovStimulants.Items
                 PriceFactor = 1.0f,
                 Probability = 1.0f,
                 ForceUnlock = true
-            }
+            },
+            Crafting = new QuackItemDefinition.CraftingConfig
+            {
+                FormulaID = "formula_SJ1_craft",
+                MoneyCost = 0L,
+                Materials = new List<(int itemId, long count)>
+                {
+                    (1247, 1L),
+                    (88, 1L),
+                },
+                ResultCount = 1,
+                Workbenches = new string[] { WorkbenchIDs.MedicStation },
+                UnlockByDefault = true,
+                RequirePerk = "",
+                HideInIndex = false,
+                LockInDemo = false
+            },
         };
 
         // 18. SJ9 (冷血针) - 品阶3, 价格2500
@@ -792,13 +856,247 @@ namespace TarkovStimulants.Items
                 ForceUnlock = true
             }
         };
+        
+        // 19. AHF1-M (凝血针) - 品阶 2, 价格 1100
+        public static readonly QuackItemDefinition Stim_AHF1M = new QuackItemDefinition
+        {
+            BaseData = new ItemData
+            {
+                itemId = 999019,
+                order = 119,
+                localizationKey = "Stim_AHF1M",
+                localizationDesc = "Stim_AHF1M_Desc",
+                weight = 0.1f,
+                value = 1100,
+                quality = 2,
+                displayQuality = DisplayQuality.Green,
+                maxStackCount = 3,
+                tags = new List<string> { "Medic", "Injector" },
+                spritePath = "items/AHF1-M.png",
+                usages = new UsageData
+                {
+                    actionSound = "SFX/Item/use_syringe",
+                    useSound = "SFX/Item/use_syringe_success",
+                    useTime = 0.5f,
+                    behaviors = new List<UsageBehaviorData>
+                    {
+                        new FoodData { waterValue = -15f },
+                        new QuackAddBuffData { buffName = "TarkovStimulants_AHF1M_Buff", chance = 1.0f }
+                    }
+                }
+            },
+            Shop = new QuackItemDefinition.ShopConfig
+            {
+                MerchantID = MerchantIDs.Mud,
+                MaxStock = 3,
+                PriceFactor = 1.0f,
+                Probability = 1.0f,
+                ForceUnlock = true
+            }
+        };
+
+        // 20. Obdolbos (鸡尾酒1) - 品阶 3, 价格 1200
+        public static readonly QuackItemDefinition Stim_Obdolbos = new QuackItemDefinition
+        {
+            BaseData = new ItemData
+            {
+                itemId = 999020,
+                order = 120,
+                localizationKey = "Stim_Obdolbos",
+                localizationDesc = "Stim_Obdolbos_Desc",
+                weight = 0.1f,
+                value = 3500,
+                quality = 5,
+                displayQuality = DisplayQuality.Orange,
+                maxStackCount = 3,
+                tags = new List<string> { "Medic", "Injector" },
+                spritePath = "items/Obdolbos.png",
+                usages = new UsageData
+                {
+                    actionSound = "SFX/Item/use_syringe",
+                    useSound = "SFX/Item/use_syringe_success",
+                    useTime = 0.5f,
+                    behaviors = new List<UsageBehaviorData>
+                    {
+                        new FoodData { energyValue = -10f, waterValue = -10f },
+                        new QuackAddBuffData { buffName = "TarkovStimulants_Obdolbos_Buff", chance = 1.0f }
+                    }
+                }
+            },
+            Shop = new QuackItemDefinition.ShopConfig
+            {
+                MerchantID = MerchantIDs.Mud,
+                MaxStock = 1,
+                PriceFactor = 1.0f,
+                Probability = 0.5f,
+                ForceUnlock = true
+            }
+        };
+
+        // 21. PNB (肌肉针) - 品阶 3, 价格 2250
+        public static readonly QuackItemDefinition Stim_PNB = new QuackItemDefinition
+        {
+            BaseData = new ItemData
+            {
+                itemId = 999021,
+                order = 121,
+                localizationKey = "Stim_PNB",
+                localizationDesc = "Stim_PNB_Desc",
+                weight = 0.1f,
+                value = 850,
+                quality = 3,
+                displayQuality = DisplayQuality.Blue,
+                maxStackCount = 3,
+                tags = new List<string> { "Medic", "Injector" },
+                spritePath = "items/PNB.png",
+                usages = new UsageData
+                {
+                    actionSound = "SFX/Item/use_syringe",
+                    useSound = "SFX/Item/use_syringe_success",
+                    useTime = 0.5f,
+                    behaviors = new List<UsageBehaviorData>
+                    {
+                        new FoodData { energyValue = -5f, waterValue = -5f },
+                        new QuackAddBuffData { buffName = "TarkovStimulants_PNB_Buff", chance = 1.0f }
+                    }
+                }
+            },
+            Shop = new QuackItemDefinition.ShopConfig
+            {
+                MerchantID = MerchantIDs.Mud,
+                MaxStock = 2,
+                PriceFactor = 1.0f,
+                Probability = 1.0f,
+                ForceUnlock = true
+            }
+        };
+
+        // 22. xTG-12 (解毒针) - 品阶 3, 价格 2200
+        public static readonly QuackItemDefinition Stim_xTG12 = new QuackItemDefinition
+        {
+            BaseData = new ItemData
+            {
+                itemId = 999022,
+                order = 122,
+                localizationKey = "Stim_xTG12",
+                localizationDesc = "Stim_xTG12_Desc",
+                weight = 0.1f,
+                value = 1750,
+                quality = 3,
+                displayQuality = DisplayQuality.Blue,
+                maxStackCount = 3,
+                tags = new List<string> { "Medic", "Injector" },
+                spritePath = "items/xTG-12.png",
+                usages = new UsageData
+                {
+                    actionSound = "SFX/Item/use_syringe",
+                    useSound = "SFX/Item/use_syringe_success",
+                    useTime = 0.5f,
+                    behaviors = new List<UsageBehaviorData>
+                    {
+                        new FoodData { energyValue = -5f },
+                        new QuackAddBuffData { buffName = "TarkovStimulants_xTG12_Buff", chance = 1.0f }
+                    }
+                }
+            },
+            Shop = new QuackItemDefinition.ShopConfig
+            {
+                MerchantID = MerchantIDs.Mud,
+                MaxStock = 1,
+                PriceFactor = 1.0f,
+                Probability = 0.8f,
+                ForceUnlock = true
+            }
+        };
+
+        // 23. SJ15 (巅峰针) - 品阶 5, 价格 7200
+        public static readonly QuackItemDefinition Stim_SJ15 = new QuackItemDefinition
+        {
+            BaseData = new ItemData
+            {
+                itemId = 999023,
+                order = 123,
+                localizationKey = "Stim_SJ15",
+                localizationDesc = "Stim_SJ15_Desc",
+                weight = 0.1f,
+                value = 7200,
+                quality = 5,
+                displayQuality = DisplayQuality.Orange,
+                maxStackCount = 3,
+                tags = new List<string> { "Medic", "Injector" },
+                spritePath = "items/SJ15.png",
+                usages = new UsageData
+                {
+                    actionSound = "SFX/Item/use_syringe",
+                    useSound = "SFX/Item/use_syringe_success",
+                    useTime = 0.5f,
+                    behaviors = new List<UsageBehaviorData>
+                    {
+                        new FoodData { energyValue = -5f, waterValue = -10f },
+                        new QuackAddBuffData { buffName = "TarkovStimulants_SJ15_Buff", chance = 1.0f }
+                    }
+                }
+            },
+            Shop = new QuackItemDefinition.ShopConfig
+            {
+                MerchantID = MerchantIDs.Mud,
+                MaxStock = 1,
+                PriceFactor = 1.0f,
+                Probability = 0.3f,
+                ForceUnlock = true
+            }
+        };
+
+        // // 24. Obdolbos N - 品阶 5, 价格 7500
+        // public static readonly QuackItemDefinition Stim_ObdolbosN = new QuackItemDefinition
+        // {
+        //     BaseData = new ItemData
+        //     {
+        //         itemId = 999024,
+        //         order = 124,
+        //         localizationKey = "Stim_ObdolbosN",
+        //         localizationDesc = "Stim_ObdolbosN_Desc",
+        //         weight = 0.1f,
+        //         value = 7500,
+        //         quality = 5,
+        //         displayQuality = DisplayQuality.Orange,
+        //         maxStackCount = 3,
+        //         tags = new List<string> { "Medic", "Injector" },
+        //         spritePath = "items/ObdolbosN.png",
+        //         usages = new UsageData
+        //         {
+        //             actionSound = "SFX/Item/use_syringe",
+        //             useSound = "SFX/Item/use_syringe_success",
+        //             useTime = 0.5f,
+        //             behaviors = new List<UsageBehaviorData>
+        //             {
+        //                 new FoodData { energyValue = -15f, waterValue = -15f },
+        //                 new QuackAddBuffData { buffName = "TarkovStimulants_ObdolbosN_Buff", chance = 1.0f }
+        //             }
+        //         }
+        //     },
+        //     Shop = new QuackItemDefinition.ShopConfig
+        //     {
+        //         MerchantID = MerchantIDs.Mud,
+        //         MaxStock = 1,
+        //         PriceFactor = 1.0f,
+        //         Probability = 0.2f,
+        //         ForceUnlock = true
+        //     }
+        // };
 
         public static readonly List<QuackItemDefinition> AllQuackItems = new List<QuackItemDefinition>
         {
             Stim_eTGc, Stim_SJ12, Stim_Propital, Stim_SJ6, Stim_MULE, Stim_Adrenaline,
             Stim_Meldonin, Stim_Morphine, Stim_L1, Stim_3bTG, Stim_Perfotoran,
             Stim_2A2bTG, Stim_P22, Stim_Obdolbos2, Stim_Trimadol, Stim_SJ1,
-            Stim_Zagustin, Stim_SJ9
+            Stim_Zagustin, Stim_SJ9,
+            Stim_AHF1M,
+            Stim_Obdolbos,
+            Stim_PNB,
+            Stim_xTG12,
+            Stim_SJ15,
+            //Stim_ObdolbosN    // 24
         };
     }
 }

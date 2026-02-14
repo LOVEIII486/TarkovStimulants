@@ -10,7 +10,7 @@ namespace TarkovStimulants.Buffs
             {
                 QuackBuffRegistry.Instance.Register(buff);
             }
-            ModLogger.Log($"[Buff] 成功注册了 {BuffDefinitions.AllBuffs.Count} 个 Buff");
+            ModLogger.Log($"[TarkovStimulants] 成功注册了 {BuffDefinitions.AllBuffs.Count} 个 Buff");
         }
     }
 }

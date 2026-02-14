@@ -93,6 +93,38 @@
     "TarkovStimulants_SJ9_Buff": "SJ9 TGLabs",
     "TarkovStimulants_SJ9_Buff_Desc": "“冷血”状态：被发现距离减半（-50%），降低 30% 代谢消耗。代价是持续缓慢扣血。",
 
+    "Stim_AHF1M":"AHF1-M兴奋剂",
+    "Stim_AHF1M_Desc":"基于人类抗血友病因子的军用药物。作为一种强大的凝结剂，可以暂时止血，并增强对流血的抵抗力。药效期间会导致脱水。",
+    "TarkovStimulants_AHF1M_Buff": "AHF1-M",
+    "TarkovStimulants_AHF1M_Buff_Desc": "获得 90 秒流血免疫并立即移除所有流血状态。使用后会减少水分。",
+
+    "Stim_Obdolbos":"Obdolbos 鸡尾酒",
+    "Stim_Obdolbos_Desc":"装有自制药品的注射器，由 TerraGroup Labs 的前雇员制作。其复杂的成分会导致极度不稳定的生理反应。",
+    "TarkovStimulants_Obdolbos_Buff": "Obdolbos 鸡尾酒",
+    "TarkovStimulants_Obdolbos_Buff_Desc": "混乱的生化反应：每项加成（机动、火力、幸运、减伤）均有 25% 独立几率触发，同时面临 25% 的即死风险。",
+
+    "Stim_PNB":"PNB肌肉兴奋剂",
+    "Stim_PNB_Desc":"战斗兴奋剂，代号PNB。其能短期激活内部肌肉进入高渗透状态，显著提升身体爆发力与再生速度，但药效过后会感到虚弱。",
+    "TarkovStimulants_PNB_Buff": "PNB",
+    "TarkovStimulants_PNB_Buff_Desc": "爆发期：枪械伤害提升 30%，每秒恢复 8% 生命值；35秒后触发虚弱副作用（最大生命值减少 15）。",
+    "TarkovStimulants_PNB_Debuff": "PNB 副作用",
+    "TarkovStimulants_PNB_Debuff_Desc": "肌肉组织疲劳：最大生命值暂时减少 15 点。",
+
+    "Stim_xTG12":"xTG-12解毒针",
+    "Stim_xTG12_Desc":"能够中和战争中使用过的大多数已知毒素。提供对毒素的免疫效果，但会导致健康指标轻微下降。",
+    "TarkovStimulants_xTG12_Buff": "xTG-12",
+    "TarkovStimulants_xTG12_Buff_Desc": "抗毒状态：获得 60 秒中毒抵抗并立即移除所有中毒状态。",
+
+    "Stim_SJ15":"SJ15“巅峰”兴奋剂",
+    "Stim_SJ15_Desc":"军用顶级战斗药剂。全方位压榨身体潜能，提供无与伦比的机动性、负重与再生能力。这是最后的手段，因为药效结束后的副作用通常是致命的。",
+    "TarkovStimulants_SJ15_Buff": "SJ15 巅峰",
+    "TarkovStimulants_SJ15_Buff_Desc": "战神模式：生命与体力上限 +50，移速与负重 +50%，极速回血并免疫流血/中毒。药效结束前有 50% 几率猝死。",
+
+    "Stim_ObdolbosN":"Obdolbos N 鸡尾酒",
+    "Stim_ObdolbosN_Desc":"Obdolbos 的改进型号，代号“N”。它专注于提升使用者的魅力与交涉能力，但依然保留了极高的生化不稳定性。",
+    "TarkovStimulants_ObdolbosN_Buff": "Obdolbos N",
+    "TarkovStimulants_ObdolbosN_Buff_Desc": "商业欺诈：极大提升魅力并大幅优化商人物价。警告：使用时有 25% 的几率因器官衰竭而猝死。",
+
     "TarkovStimulants_Tremor_Debuff": "震颤",
     "TarkovStimulants_Tremor_Debuff_Desc": "生理机能紊乱：枪械散布增加 30%，后座力控制能力下降 30%。",
     "TarkovStimulants_TunnelVision_Debuff": "管视效应",
