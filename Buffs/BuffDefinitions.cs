@@ -311,7 +311,7 @@ namespace TarkovStimulants.Buffs
         public static readonly QuackBuffDefinition SJ1_Buff =
             new QuackBuffDefinition(new QuackBuffFactory.BuffConfig("TarkovStimulants", "SJ1_Buff", 999116, 60f,
                     GetIconPath("SJ1")))
-                .AddEffect(new AttributeModifierEffect(ModifierKeyConstant.Stat.RunSpeed, 1.2f, true))
+                //.AddEffect(new AttributeModifierEffect(ModifierKeyConstant.Stat.RunSpeed, 1.2f, true))
                 .AddEffect(new AttributeModifierEffect(ModifierKeyConstant.Stat.ElementFactor_Physics, -0.1f, false))
                 .AddEffect(new AttributeModifierEffect(ModifierKeyConstant.Stat.GunDamageMultiplier, 1.3f, true))
                 .AddEffect(new AttributeModifierEffect(ModifierKeyConstant.Stat.RecoilControl, 1.5f, true))
