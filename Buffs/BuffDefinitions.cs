@@ -1,6 +1,4 @@
 ﻿using System.Collections.Generic;
-using System.Reflection;
-using System.IO;
 using QuackCore.BuffSystem;
 using QuackCore.BuffSystem.Effects;
 using QuackCore.BuffSystem.Logic;
@@ -10,10 +8,7 @@ namespace TarkovStimulants.Buffs
 {
     public static class BuffDefinitions
     {
-        private static readonly string DllDir = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
-
-        private static string GetIconPath(string fileName)
-            => Path.Combine(DllDir, $"assets/textures/buffs/{fileName}.png");
+        private static string GetIconPath(string fileName) => ($"assets/textures/buffs/{fileName}.png");
 
         #region 辅助用Debuff
 
@@ -98,8 +93,8 @@ namespace TarkovStimulants.Buffs
                 .AddEffect(new AttributeModifierEffect(ModifierKeyConstant.Stat.WaterCost, 0.9f, true))
                 //.AddCustomLogic(new BuffImmunityLogic(false, 1001, 1002)) // 止血
                 .AddCustomLogic(new DelayedBuffLogic(
-                    (999301, 140f, -1f,1f),
-                    (999302, 140f, -1f,1f)
+                    (999301, 140f, float.NaN,1f),
+                    (999302, 140f, float.NaN,1f)
                 ));
 
 
@@ -118,8 +113,8 @@ namespace TarkovStimulants.Buffs
                 .AddEffect(new AttributeModifierEffect(ModifierKeyConstant.Stat.WalkSpeed, 1.2f, true))
                 .AddEffect(new AttributeModifierEffect(ModifierKeyConstant.Stat.RunSpeed, 1.2f, true))
                 .AddCustomLogic(new DelayedBuffLogic(
-                    (999301, 120f, -1f,1f),
-                    (999302, 120f, -1f,1f)
+                    (999301, 120f, float.NaN,1f),
+                    (999302, 120f, float.NaN,1f)
                 ));
 
         // 5. M.U.L.E. (负重针)
@@ -187,7 +182,7 @@ namespace TarkovStimulants.Buffs
             new QuackBuffDefinition(new QuackBuffFactory.BuffConfig("TarkovStimulants", "Morphine_Buff", 999108, 300f,
                     GetIconPath("Morphine")))
                 .AddCustomLogic(new BuffImmunityLogic(false, 1003, 1004)) //预防骨折，创伤
-                .AddEffect(new ApplyBuffEffect(1084, -1));
+                .AddEffect(new ApplyBuffEffect(1084, float.NaN));
 
         // 9. L1 (去甲肾上腺素)
         /// <summary>
@@ -231,7 +226,7 @@ namespace TarkovStimulants.Buffs
                     GetIconPath("Perfotoran")))
                 .AddCustomLogic(new RegenerationLogic(0.04f, 1.0f, 60, false))
                 .AddEffect(new ApplyBuffEffect(1075, 60f))
-                .AddEffect(new ApplyBuffEffect(1019, -1f))
+                .AddEffect(new ApplyBuffEffect(1019, float.NaN))
                 .AddEffect(new ApplyBuffEffect(1492, 60f))
                 .AddCustomLogic(new EnegyWaterRestoreLogic(-0.03f, 0f, 1f));
                 //.AddCustomLogic(new BuffImmunityLogic(false, 1001, 1002, 1061));
@@ -391,7 +386,7 @@ namespace TarkovStimulants.Buffs
                     new(ModifierKeyConstant.Stat.ElementFactor_Physics, 0.25f, false, 0.25f) // 易伤 +20%
                 ))
                 .AddCustomLogic(new DelayedBuffLogic(
-                    (999303, 1f, -1f, 0.25f)
+                    (999303, 1f, float.NaN, 0.25f)
                 ));
         
         // 21. PNB (肌肉针)

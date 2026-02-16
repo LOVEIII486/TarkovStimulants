@@ -26,10 +26,6 @@
         </Reference>
     </ItemGroup>
 
-    <ItemGroup>
-      <Folder Include="Buffs\Effects\" />
-    </ItemGroup>
-
     <Target Name="PostBuild" AfterTargets="PostBuildEvent">
         <Exec Command="if not exist &quot;$(ModBaseDir)\$(ProjectName)&quot; mkdir &quot;$(ModBaseDir)\$(ProjectName)&quot;&#xA;copy /Y &quot;$(TargetPath)&quot; &quot;$(ModBaseDir)\$(ProjectName)\&quot;" />
 

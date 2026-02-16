@@ -1,9 +1,10 @@
 ﻿using System;
+using System.IO;
 using System.Linq;
 using System.Reflection;
+using UnityEngine;
 using HarmonyLib;
 using TarkovStimulants.Constants;
-using UnityEngine.SceneManagement;
 using FastModdingLib;
 using TarkovStimulants.Buffs;
 using TarkovStimulants.Items;
@@ -14,33 +15,33 @@ namespace TarkovStimulants
     public class ModBehaviour : Duckov.Modding.ModBehaviour
     {
         public static ModBehaviour Instance { get; private set; }
-        
-        private string _dllPath => Assembly.GetExecutingAssembly().Location;
-        private Harmony _harmony;
+
+        private string _dllPath;
+        private Harmony _harmonyInstance;
+
         private bool _isPatched = false;
-        private bool _hooksInitialized = false;
-        
         private bool _isApplicationQuitting = false;
 
         #region Unity Lifecycle
 
         private void Awake()
         {
-            InitializeSingleton();
-            InitializeI18nCore();
+            InitSingleton();
+            InitEnvironment();
+            InitLocalization();
         }
 
         private void OnEnable()
         {
-            if (!ValidateDependencies()) return;
-            
+            if (!CheckDepenndencies()) return;
+
             ApplyHarmonyPatches();
         }
 
         protected override void OnAfterSetup()
         {
             base.OnAfterSetup();
-            
+
             LoadLocalization();
             RegisterAllContent();
         }
@@ -48,53 +49,49 @@ namespace TarkovStimulants
         private void OnDisable()
         {
             RemoveHarmonyPatches();
-            
+
             if (_isApplicationQuitting) return;
             UnregisterAllContent();
         }
 
         private void OnDestroy()
         {
-            DisposeSingleton();
-        }
-        
-        private void OnApplicationQuit()
-        {
-            _isApplicationQuitting = true;
+            ClearSingleton();
         }
 
         #endregion
 
-        #region System & Initialization
+        #region 初始化
 
-        private void InitializeSingleton()
+        private void InitSingleton()
         {
-            if (Instance != null) { Destroy(this); return; }
+            if (Instance != null)
+            {
+                Destroy(this);
+                return;
+            }
+
             Instance = this;
             DontDestroyOnLoad(gameObject);
-            ModLogger.Log($"{ModConstant.ModName} 初始化开始...");
         }
 
-        private void InitializeI18nCore()
+        private void ClearSingleton()
         {
-            if (IsAssemblyLoaded(ModConstant.FmlAssemblyName))
+            if (Instance == this) Instance = null;
+        }
+
+        private void InitEnvironment()
+        {
+            _dllPath = Assembly.GetExecutingAssembly().Location;
+            Application.quitting += () => _isApplicationQuitting = true;
+        }
+
+        private void InitLocalization()
+        {
+            if (!CheckAssembly("FastModdingLib"))
             {
                 I18n.InitI18n(_dllPath);
             }
-        }
-
-        private bool ValidateDependencies()
-        {
-            if (HarmonyLoader.LoadHarmony(info.path) != null) return true;
-            
-            ModLogger.LogError("缺失 Harmony 依赖，模组停用。");
-            enabled = false;
-            return false;
-        }
-
-        private void DisposeSingleton()
-        {
-            if (Instance == this) Instance = null;
         }
 
         #endregion
@@ -103,95 +100,108 @@ namespace TarkovStimulants
 
         private void LoadLocalization()
         {
-            try
+            var currentLanguage = SodaCraft.Localizations.LocalizationManager.CurrentLanguage;
+            if (I18n.localizedNames.TryGetValue(currentLanguage, out string languageFileName))
             {
-                var lang = SodaCraft.Localizations.LocalizationManager.CurrentLanguage;
-                I18n.loadFileJson(_dllPath, $"/{I18n.localizedNames[lang]}");
+                I18n.loadFileJson(_dllPath, $"/{languageFileName}");
             }
-            catch (Exception ex)
+            else
             {
-                ModLogger.LogError($"本地化文件加载失败: {ex.Message}");
+                ModLogger.LogWarning($"未找到当前语言 ({currentLanguage}) 的本地化配置，模组将显示原始文本。");
             }
         }
 
         #endregion
 
-        #region Harmony & Scene Hooks
+        #region Harmony
 
         private void ApplyHarmonyPatches()
         {
             if (_isPatched) return;
+
             try
             {
-                _harmony ??= new Harmony(ModConstant.ModId);
-                _harmony.PatchAll(GetType().Assembly);
+                _harmonyInstance ??= new Harmony(ModConstant.ModId);
+                _harmonyInstance.PatchAll(GetType().Assembly);
                 _isPatched = true;
-                ModLogger.Log("Harmony 补丁已注入。");
+                ModLogger.Log("Harmony 补丁注入成功。");
             }
-            catch (Exception ex) { ModLogger.LogError($"Patch 异常: {ex.Message}"); }
+            catch (Exception ex)
+            {
+                ModLogger.LogError($"Harmony 补丁注入失败: {ex.Message}");
+            }
         }
 
         private void RemoveHarmonyPatches()
         {
-            if (_isPatched && _harmony != null)
+            if (!_isPatched || _harmonyInstance == null) return;
+
+            try
             {
-                _harmony.UnpatchAll(ModConstant.ModId);
+                _harmonyInstance.UnpatchAll(ModConstant.ModId);
                 _isPatched = false;
+                ModLogger.Log("Harmony 补丁已成功卸载。");
             }
-        }
-
-        private void ApplySceneHooks()
-        {
-            if (_hooksInitialized) return;
-            SceneManager.sceneLoaded += OnSceneLoaded;
-            _hooksInitialized = true;
-        }
-
-        private void RemoveSceneHooks()
-        {
-            if (_hooksInitialized)
+            catch (Exception ex)
             {
-                SceneManager.sceneLoaded -= OnSceneLoaded;
-                _hooksInitialized = false;
+                ModLogger.LogError($"Harmony 补丁卸载异常: {ex.Message}");
             }
-        }
-
-        private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
-        {
-            ModLogger.LogDebug($"进入场景: {scene.name}");
         }
 
         #endregion
 
-        #region 注册与卸载内容
+        #region 注册与卸载
 
         private void RegisterAllContent()
         {
-            RegisterBuffs();
-            RegisterItems();
-            RegisterQuests();
-            ModLogger.Log($"{ModConstant.ModName} 内容已注册。");
+            BuffRegistry.RegisterAll(_dllPath);
+            ItemRegistry.RegisterAll(_dllPath);
+            QuestRegistry.RegisterAll(ModConstant.ModId);
         }
 
         private void UnregisterAllContent()
         {
+            BuffRegistry.UnregisterAll();
             ItemRegistry.UnregisterAll();
             QuestRegistry.UnregisterAll(ModConstant.ModId);
-            ModLogger.Log($"{ModConstant.ModName} 内容已卸载。");
         }
-
-        private void RegisterBuffs() => BuffRegistry.RegisterAll();
-
-        private void RegisterItems() => ItemRegistry.RegisterAll(_dllPath);
-
-        private void RegisterQuests() => QuestRegistry.RegisterAll(_dllPath);
 
         #endregion
 
-        #region 辅助函数
+        #region 检查前置
 
-        private bool IsAssemblyLoaded(string name) => 
-            AppDomain.CurrentDomain.GetAssemblies().Any(a => a.GetName().Name.Contains(name));
+        private bool CheckDepenndencies()
+        {
+            if (HarmonyLoader.LoadHarmony(info.path) == null)
+            {
+                ModLogger.LogError("Harmony 加载失败！");
+                enabled = false;
+                return false;
+            }
+
+            if (!CheckAssembly("FastModdingLib"))
+            {
+                ModLogger.LogError("缺失前置库 FastModdingLib！");
+                enabled = false;
+                return false;
+            }
+
+            if (!CheckAssembly("QuackCore"))
+            {
+                ModLogger.LogError("缺失前置库 QuackCore！");
+                enabled = false;
+                return false;
+            }
+
+            ModLogger.Log("依赖项检查通过。");
+            return true;
+        }
+
+        private bool CheckAssembly(string assemblyName)
+        {
+            return AppDomain.CurrentDomain.GetAssemblies()
+                .Any(a => a.GetName().Name.Equals(assemblyName, StringComparison.OrdinalIgnoreCase));
+        }
 
         #endregion
     }

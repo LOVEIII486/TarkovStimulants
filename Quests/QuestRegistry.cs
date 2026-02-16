@@ -16,13 +16,13 @@ namespace TarkovStimulants.Quests
                 QuestUtils.AddQuestRelation(relation.id, relation.before, relation.after);
             }
 
-            ModLogger.Log($"成功注册了 {QuestDefinitions.AllQuests.Count} 个自定义任务。");
+            ModLogger.Log($"注册了 {QuestDefinitions.AllQuests.Count} 个自定义任务。");
         }
 
         public static void UnregisterAll(string modId)
         {
             QuestUtils.UnregisterQuestAll(modId);
-            ModLogger.Log($"模组 '{modId}' 的所有任务已注销。");
+            ModLogger.Log($"注销了 {QuestDefinitions.AllQuests.Count} 个自定义任务。");
         }
     }
 }
