@@ -34,7 +34,7 @@ namespace TarkovStimulants.Items
                     behaviors = new List<UsageBehaviorData>
                     {
                         new FoodData { energyValue = -10f, waterValue = -20f },
-                        new QuackAddBuffData { buffName = "TarkovStimulants_eTGc_Buff", chance = 1.0f }
+                        new QuackAddBuffData { buffId = 999101, chance = 1.0f }
                     }
                 }
             },
@@ -97,7 +97,7 @@ namespace TarkovStimulants.Items
                     behaviors = new List<UsageBehaviorData>
                     {
                         new FoodData { energyValue = 5f, waterValue = 10f },
-                        new QuackAddBuffData { buffName = "TarkovStimulants_SJ12_Buff", chance = 1.0f }
+                        new QuackAddBuffData { buffId = 999102, chance = 1.0f }
                     }
                 }
             },
@@ -152,7 +152,7 @@ namespace TarkovStimulants.Items
                     behaviors = new List<UsageBehaviorData>
                     {
                         new FoodData { energyValue = -5f, waterValue = -10f },
-                        new QuackAddBuffData { buffName = "TarkovStimulants_Propital_Buff", chance = 1.0f }
+                        new QuackAddBuffData { buffId = 999103, chance = 1.0f }
                     }
                 }
             },
@@ -204,7 +204,7 @@ namespace TarkovStimulants.Items
                     behaviors = new List<UsageBehaviorData>
                     {
                         new FoodData { energyValue = -5f, waterValue = -10f },
-                        new QuackAddBuffData { buffName = "TarkovStimulants_SJ6_Buff", chance = 1.0f }
+                        new QuackAddBuffData { buffId = 999104, chance = 1.0f }
                     }
                 }
             },
@@ -255,7 +255,7 @@ namespace TarkovStimulants.Items
                     behaviors = new List<UsageBehaviorData>
                     {
                         new FoodData { energyValue = -5f, waterValue = -10f },
-                        new QuackAddBuffData { buffName = "TarkovStimulants_MULE_Buff", chance = 1.0f }
+                        new QuackAddBuffData { buffId = 999105, chance = 1.0f }
                     }
                 }
             },
@@ -306,7 +306,7 @@ namespace TarkovStimulants.Items
                     behaviors = new List<UsageBehaviorData>
                     {
                         new FoodData { energyValue = -5f, waterValue = -10f },
-                        new QuackAddBuffData { buffName = "TarkovStimulants_Adrenaline_Buff", chance = 1.0f },
+                        new QuackAddBuffData { buffId = 999106, chance = 1.0f },
                     }
                 }
             },
@@ -352,7 +352,7 @@ namespace TarkovStimulants.Items
                     behaviors = new List<UsageBehaviorData>
                     {
                         new FoodData { energyValue = -5f, waterValue = -10f },
-                        new QuackAddBuffData { buffName = "TarkovStimulants_Meldonin_Buff", chance = 1.0f }
+                        new QuackAddBuffData { buffId = 999107, chance = 1.0f }
                     }
                 }
             },
@@ -398,7 +398,7 @@ namespace TarkovStimulants.Items
                     behaviors = new List<UsageBehaviorData>
                     {
                         new FoodData { energyValue = -10f, waterValue = -15f },
-                        new QuackAddBuffData { buffName = "TarkovStimulants_Morphine_Buff", chance = 1.0f },
+                        new QuackAddBuffData { buffId = 999108, chance = 1.0f },
                         //new AddBuffData { buff = 1019, chance = 1f },
                         //new AddBuffData { buff = 1083, chance = 1f }
                     }
@@ -454,7 +454,7 @@ namespace TarkovStimulants.Items
                     behaviors = new List<UsageBehaviorData>
                     {
                         new FoodData { energyValue = -15f, waterValue = -15f },
-                        new QuackAddBuffData { buffName = "TarkovStimulants_L1_Buff", chance = 1.0f }
+                        new QuackAddBuffData { buffId = 999109, chance = 1.0f }
                     }
                 }
             },
@@ -492,7 +492,7 @@ namespace TarkovStimulants.Items
                     behaviors = new List<UsageBehaviorData>
                     {
                         new FoodData { energyValue = -10f },
-                        new QuackAddBuffData { buffName = "TarkovStimulants_Stim_3bTG_Buff", chance = 1.0f }
+                        new QuackAddBuffData { buffId = 999110, chance = 1.0f }
                     }
                 }
             },
@@ -530,7 +530,7 @@ namespace TarkovStimulants.Items
                     behaviors = new List<UsageBehaviorData>
                     {
                         new FoodData { energyValue = -5f, waterValue = -10f },
-                        new QuackAddBuffData { buffName = "TarkovStimulants_Perfotoran_Buff", chance = 1.0f },
+                        new QuackAddBuffData { buffId = 999111, chance = 1.0f },
                         //new RemoveBuffData { buffID = 1001 },
                         //new AddBuffData { buff = 1019, chance = 1f }
                     }
@@ -570,7 +570,7 @@ namespace TarkovStimulants.Items
                     behaviors = new List<UsageBehaviorData>
                     {
                         new FoodData { waterValue = -15f },
-                        new QuackAddBuffData { buffName = "TarkovStimulants_Stim_2A2bTG_Buff", chance = 1.0f }
+                        new QuackAddBuffData { buffId = 999112, chance = 1.0f }
                     }
                 }
             },
@@ -620,7 +620,7 @@ namespace TarkovStimulants.Items
                     behaviors = new List<UsageBehaviorData>
                     {
                         new FoodData { waterValue = -10f },
-                        new QuackAddBuffData { buffName = "TarkovStimulants_P22_Buff", chance = 1.0f }
+                        new QuackAddBuffData { buffId = 999113, chance = 1.0f }
                     }
                 }
             },
@@ -658,7 +658,7 @@ namespace TarkovStimulants.Items
                     behaviors = new List<UsageBehaviorData>
                     {
                         new FoodData { energyValue = -20f, waterValue = -20f },
-                        new QuackAddBuffData { buffName = "TarkovStimulants_Obdolbos2_Buff", chance = 1.0f }
+                        new QuackAddBuffData { buffId = 999114, chance = 1.0f }
                     }
                 }
             },
@@ -695,8 +695,8 @@ namespace TarkovStimulants.Items
                     useTime = 0.5f,
                     behaviors = new List<UsageBehaviorData>
                     {
-                        new QuackAddBuffData { buffName = "TarkovStimulants_Trimadol_Buff", chance = 1.0f },
-                        new RemoveBuffData { buffID = 1001 }
+                        new QuackAddBuffData { buffId = 999115, chance = 1.0f },
+                        //new RemoveBuffData { buffID = 1001 }
                     }
                 }
             },
@@ -734,7 +734,7 @@ namespace TarkovStimulants.Items
                     behaviors = new List<UsageBehaviorData>
                     {
                         new FoodData { energyValue = -8f, waterValue = -17f },
-                        new QuackAddBuffData { buffName = "TarkovStimulants_SJ1_Buff", chance = 1.0f }
+                        new QuackAddBuffData { buffId = 999116, chance = 1.0f }
                     }
                 }
             },
@@ -789,8 +789,8 @@ namespace TarkovStimulants.Items
                     useTime = 0.5f,
                     behaviors = new List<UsageBehaviorData>
                     {
-                        new QuackAddBuffData { buffName = "TarkovStimulants_Zagustin_Buff", chance = 1.0f },
-                        new RemoveBuffData { buffID = 1001 }
+                        new QuackAddBuffData { buffId = 999117, chance = 1.0f },
+                        //new RemoveBuffData { buffID = 1001 }
                     }
                 }
             },
@@ -844,7 +844,7 @@ namespace TarkovStimulants.Items
                     behaviors = new List<UsageBehaviorData>
                     {
                         new FoodData { energyValue = -5f, waterValue = -10f },
-                        new QuackAddBuffData { buffName = "TarkovStimulants_SJ9_Buff", chance = 1.0f }
+                        new QuackAddBuffData { buffId = 999118, chance = 1.0f }
                     }
                 }
             },
@@ -882,7 +882,8 @@ namespace TarkovStimulants.Items
                     behaviors = new List<UsageBehaviorData>
                     {
                         new FoodData { waterValue = -15f },
-                        new QuackAddBuffData { buffName = "TarkovStimulants_AHF1M_Buff", chance = 1.0f }
+                        new QuackAddBuffData { buffId = 999119, chance = 1.0f },
+                        //new RemoveBuffData { buffID = 1001 }
                     }
                 }
             },
@@ -920,7 +921,7 @@ namespace TarkovStimulants.Items
                     behaviors = new List<UsageBehaviorData>
                     {
                         new FoodData { energyValue = -10f, waterValue = -10f },
-                        new QuackAddBuffData { buffName = "TarkovStimulants_Obdolbos_Buff", chance = 1.0f }
+                        new QuackAddBuffData { buffId = 999120, chance = 1.0f }
                     }
                 }
             },
@@ -958,7 +959,7 @@ namespace TarkovStimulants.Items
                     behaviors = new List<UsageBehaviorData>
                     {
                         new FoodData { energyValue = -5f, waterValue = -5f },
-                        new QuackAddBuffData { buffName = "TarkovStimulants_PNB_Buff", chance = 1.0f }
+                        new QuackAddBuffData { buffId = 999121, chance = 1.0f }
                     }
                 }
             },
@@ -996,7 +997,7 @@ namespace TarkovStimulants.Items
                     behaviors = new List<UsageBehaviorData>
                     {
                         new FoodData { energyValue = -5f },
-                        new QuackAddBuffData { buffName = "TarkovStimulants_xTG12_Buff", chance = 1.0f }
+                        new QuackAddBuffData { buffId = 999122, chance = 1.0f }
                     }
                 }
             },
@@ -1034,7 +1035,7 @@ namespace TarkovStimulants.Items
         //             behaviors = new List<UsageBehaviorData>
         //             {
         //                 new FoodData { energyValue = -5f, waterValue = -10f },
-        //                 new QuackAddBuffData { buffName = "TarkovStimulants_SJ15_Buff", chance = 1.0f }
+        //                 new QuackAddBuffData { buffId = 999123, chance = 1.0f }
         //             }
         //         }
         //     },
@@ -1072,7 +1073,7 @@ namespace TarkovStimulants.Items
         //             behaviors = new List<UsageBehaviorData>
         //             {
         //                 new FoodData { energyValue = -15f, waterValue = -15f },
-        //                 new QuackAddBuffData { buffName = "TarkovStimulants_ObdolbosN_Buff", chance = 1.0f }
+        //                 new QuackAddBuffData { buffId = 999124, chance = 1.0f }
         //             }
         //         }
         //     },

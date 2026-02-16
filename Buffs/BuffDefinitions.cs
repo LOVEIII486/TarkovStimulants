@@ -53,12 +53,11 @@ namespace TarkovStimulants.Buffs
                 .AddEffect(new AttributeModifierEffect(ModifierKeyConstant.Stat.WaterCost, 0.8f, true))
                 .AddEffect(new AttributeModifierEffect(ModifierKeyConstant.Stat.ElementFactor_Fire, -0.1f, false))
                 .AddEffect(new AttributeModifierEffect(ModifierKeyConstant.Stat.ElementFactor_Poison, -0.1f, false))
-                .AddEffect(
-                    new AttributeModifierEffect(ModifierKeyConstant.Stat.ElementFactor_Electricity, -0.1f, false))
+                .AddEffect(new AttributeModifierEffect(ModifierKeyConstant.Stat.ElementFactor_Electricity, -0.1f, false))
                 .AddEffect(new AttributeModifierEffect(ModifierKeyConstant.Stat.ElementFactor_Space, -0.1f, false))
                 .AddEffect(new AttributeModifierEffect(ModifierKeyConstant.Stat.ElementFactor_Ghost, -0.1f, false))
                 .AddEffect(new AttributeModifierEffect(ModifierKeyConstant.Stat.ElementFactor_Ice, -0.1f, false))
-                .AddCustomLogic(new DelayedBuffLogic("TarkovStimulants_eTGc_Debuff", 25f));
+                .AddCustomLogic(new DelayedBuffLogic(999401, 25f));
 
         /// <summary>
         /// 65秒延迟；60秒持续时间: 耐力（-5）健康（-5）
@@ -99,8 +98,8 @@ namespace TarkovStimulants.Buffs
                 .AddEffect(new AttributeModifierEffect(ModifierKeyConstant.Stat.WaterCost, 0.9f, true))
                 //.AddCustomLogic(new BuffImmunityLogic(false, 1001, 1002)) // 止血
                 .AddCustomLogic(new DelayedBuffLogic(
-                    ("TarkovStimulants_Tremor_Debuff", 140f, 10f,1f),
-                    ("TarkovStimulants_TunnelVision_Debuff", 140f, 10f,1f)
+                    (999301, 140f, -1f,1f),
+                    (999302, 140f, -1f,1f)
                 ));
 
 
@@ -119,8 +118,8 @@ namespace TarkovStimulants.Buffs
                 .AddEffect(new AttributeModifierEffect(ModifierKeyConstant.Stat.WalkSpeed, 1.2f, true))
                 .AddEffect(new AttributeModifierEffect(ModifierKeyConstant.Stat.RunSpeed, 1.2f, true))
                 .AddCustomLogic(new DelayedBuffLogic(
-                    ("TarkovStimulants_Tremor_Debuff", 120f, 10f,1f),
-                    ("TarkovStimulants_TunnelVision_Debuff", 120f, 10f,1f)
+                    (999301, 120f, -1f,1f),
+                    (999302, 120f, -1f,1f)
                 ));
 
         // 5. M.U.L.E. (负重针)
@@ -147,11 +146,11 @@ namespace TarkovStimulants.Buffs
                     GetIconPath("Adrenaline")))
                 .AddCustomLogic(new RegenerationLogic(0.1f, 1.0f, 15, false))
                 //.AddCustomLogic(new BuffImmunityLogic(false, 1001, 1002)) // 止血
-                .AddEffect(new ApplyBuffEffect("1082_Buff_PainResistShort", 60))
+                .AddEffect(new ApplyBuffEffect(1082, 60))
                 .AddEffect(new AttributeModifierEffect(ModifierKeyConstant.Stat.Stamina, 10f, false))
                 .AddEffect(new AttributeModifierEffect(ModifierKeyConstant.Stat.StaminaRecoverRate, 1.1f, true))
                 .AddEffect(new AttributeModifierEffect(ModifierKeyConstant.Stat.GunDamageMultiplier, 1.1f, true))
-                .AddCustomLogic(new DelayedBuffLogic("TarkovStimulants_Adrenaline_Debuff", 50f));
+                .AddCustomLogic(new DelayedBuffLogic(999406, 50f));
 
         public static readonly QuackBuffDefinition Adrenaline_Debuff =
             new QuackBuffDefinition(new QuackBuffFactory.BuffConfig("TarkovStimulants", "Adrenaline_Debuff", 999406,
@@ -188,7 +187,7 @@ namespace TarkovStimulants.Buffs
             new QuackBuffDefinition(new QuackBuffFactory.BuffConfig("TarkovStimulants", "Morphine_Buff", 999108, 300f,
                     GetIconPath("Morphine")))
                 .AddCustomLogic(new BuffImmunityLogic(false, 1003, 1004)) //预防骨折，创伤
-                .AddEffect(new ApplyBuffEffect("1084_Buff_PainResistLong", -1));
+                .AddEffect(new ApplyBuffEffect(1084, -1));
 
         // 9. L1 (去甲肾上腺素)
         /// <summary>
@@ -200,7 +199,7 @@ namespace TarkovStimulants.Buffs
         public static readonly QuackBuffDefinition L1_Buff =
             new QuackBuffDefinition(new QuackBuffFactory.BuffConfig("TarkovStimulants", "L1_Buff", 999109, 90f,
                     GetIconPath("L1")))
-                .AddEffect(new ApplyBuffEffect("1082_Buff_PainResistShort", 60))
+                .AddEffect(new ApplyBuffEffect(1082, 60))
                 .AddEffect(new AttributeModifierEffect(ModifierKeyConstant.Stat.Stamina, 20f, false))
                 .AddEffect(new AttributeModifierEffect(ModifierKeyConstant.Stat.GunDamageMultiplier, 1.2f, true))
                 .AddEffect(new AttributeModifierEffect(ModifierKeyConstant.Stat.StaminaRecoverRate, 1.2f, true))
@@ -221,7 +220,7 @@ namespace TarkovStimulants.Buffs
                 .AddEffect(new AttributeModifierEffect(ModifierKeyConstant.Stat.FishingTime, 0.5f, true))
                 .AddEffect(new AttributeModifierEffect(ModifierKeyConstant.Stat.FishingQualityFactor, 2f, true))
                 .AddEffect(new AttributeModifierEffect(ModifierKeyConstant.Stat.GunDamageMultiplier, 1.1f, true))
-                .AddCustomLogic(new DelayedBuffLogic("TarkovStimulants_Tremor_Debuff", 160f));
+                .AddCustomLogic(new DelayedBuffLogic(999110, 160f));
 
         // 11. Perfotoran (蓝血)
         /// <summary>
@@ -231,9 +230,10 @@ namespace TarkovStimulants.Buffs
             new QuackBuffDefinition(new QuackBuffFactory.BuffConfig("TarkovStimulants", "Perfotoran_Buff", 999111, 60f,
                     GetIconPath("Perfotoran")))
                 .AddCustomLogic(new RegenerationLogic(0.04f, 1.0f, 60, false))
-                .AddEffect(new ApplyBuffEffect("1075_Buff_PoisonResistShort", 60))
-                .AddEffect(new ApplyBuffEffect("1019_buff_Injector_BleedResist", -1))
-                .AddCustomLogic(new BuffImmunityLogic(false, 1001, 1002, 1061));
+                .AddEffect(new ApplyBuffEffect(1075, 60))
+                .AddEffect(new ApplyBuffEffect(1019, -1))
+                .AddEffect(new ApplyBuffEffect(1092, 60));
+                //.AddCustomLogic(new BuffImmunityLogic(false, 1001, 1002, 1061));
 
         // 12. Stim_2A2bTG (侦察针)
         /// <summary>
@@ -328,10 +328,11 @@ namespace TarkovStimulants.Buffs
         public static readonly QuackBuffDefinition Zagustin_Buff =
             new QuackBuffDefinition(new QuackBuffFactory.BuffConfig("TarkovStimulants", "Zagustin_Buff", 999117, 180f,
                     GetIconPath("Zagustin")))
-                .AddCustomLogic(new BuffImmunityLogic(false, 1001, 1002))
-                .AddEffect(new ApplyBuffEffect("1019_buff_Injector_BleedResist", 180))
+                //.AddCustomLogic(new BuffImmunityLogic(false, 1001, 1002))
+                .AddEffect(new ApplyBuffEffect(1019, 180))
                 .AddEffect(new AttributeModifierEffect(ModifierKeyConstant.Stat.MaxHealth, 25f, false))
-                .AddEffect(new AttributeModifierEffect(ModifierKeyConstant.Stat.WaterCost, 1.25f, true));
+                .AddEffect(new AttributeModifierEffect(ModifierKeyConstant.Stat.WaterCost, 1.2f, true));
+                //.AddCustomLogic(new DelayedBuffLogic("TarkovStimulants_Tremor_Debuff", 160f));
 
         // 18. SJ9 (冷血针)
         /// <summary>
@@ -348,7 +349,7 @@ namespace TarkovStimulants.Buffs
                 .AddEffect(new AttributeModifierEffect(ModifierKeyConstant.Stat.WaterCost, 0.7f, true))
                 .AddEffect(new AttributeModifierEffect(ModifierKeyConstant.Stat.EnergyCost, 0.7f, true))
                 .AddCustomLogic(new RegenerationLogic(-0.002f, 1f, -1, false))
-                .AddCustomLogic(new DelayedBuffLogic("TarkovStimulants_Tremor_Debuff", 160f));
+                .AddCustomLogic(new DelayedBuffLogic(999301, 160f));
 
 
         // 19. AHF1-M (凝血针)
@@ -360,8 +361,8 @@ namespace TarkovStimulants.Buffs
         public static readonly QuackBuffDefinition AHF1M_Buff =
             new QuackBuffDefinition(new QuackBuffFactory.BuffConfig("TarkovStimulants", "AHF1M_Buff", 999119, 90f,
                     GetIconPath("AHF1-M")))
-                .AddCustomLogic(new BuffImmunityLogic(false, 1019))
-                .AddEffect(new ApplyBuffEffect("1019_buff_Injector_BleedResist", 90));
+                //.AddCustomLogic(new BuffImmunityLogic(false, 1001))
+                .AddEffect(new ApplyBuffEffect(1019, 90));
         
         // 20. Obdolbos (鸡尾酒1)
         /// <summary>
@@ -389,7 +390,7 @@ namespace TarkovStimulants.Buffs
                     new(ModifierKeyConstant.Stat.ElementFactor_Physics, 0.25f, false, 0.25f) // 易伤 +20%
                 ))
                 .AddCustomLogic(new DelayedBuffLogic(
-                    ("TarkovStimulants_InstantDeath_Debuff", 1f, -1f, 0.25f)
+                    (999303, 1f, -1f, 0.25f)
                 ));
         
         // 21. PNB (肌肉针)
@@ -403,7 +404,7 @@ namespace TarkovStimulants.Buffs
                     GetIconPath("PNB")))
                 .AddEffect(new AttributeModifierEffect(ModifierKeyConstant.Stat.GunDamageMultiplier, 1.3f, true))
                 .AddCustomLogic(new RegenerationLogic(0.08f, 1.0f, 30, false))
-                .AddCustomLogic(new DelayedBuffLogic("TarkovStimulants_PNB_Debuff", 35f));
+                .AddCustomLogic(new DelayedBuffLogic(999421, 35f));
         
         public static readonly QuackBuffDefinition PNB_Debuff =
             new QuackBuffDefinition(new QuackBuffFactory.BuffConfig("TarkovStimulants", "PNB_Buff", 999421, 10f,
@@ -419,7 +420,7 @@ namespace TarkovStimulants.Buffs
         public static readonly QuackBuffDefinition xTG12_Buff =
             new QuackBuffDefinition(new QuackBuffFactory.BuffConfig("TarkovStimulants", "xTG12_Buff", 999122, 60f,
                     GetIconPath("xTG-12")))
-                .AddEffect(new ApplyBuffEffect("1075_Buff_PoisonResistShort", 60))
+                .AddEffect(new ApplyBuffEffect(1075, 60))
                 .AddCustomLogic(new BuffImmunityLogic(false, 1061));
 
         // 23. SJ15 (巅峰针)
