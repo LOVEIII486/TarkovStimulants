@@ -163,7 +163,7 @@ namespace TarkovStimulants
         {
             BuffRegistry.UnregisterAll();
             ItemRegistry.UnregisterAll();
-            QuestRegistry.UnregisterAll(ModConstant.ModId);
+            //QuestRegistry.UnregisterAll(ModConstant.ModId);
         }
 
         #endregion
