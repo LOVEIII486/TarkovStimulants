@@ -221,8 +221,8 @@ namespace TarkovStimulants.Items
                 FormulaID = "formula_SJ6_craft",
                 Materials = new List<(int itemId, long count)>
                 {
-                    (136, 2L), 
-                    (137, 2L), 
+                    (136, 2L),
+                    (137, 2L),
                     (88, 2L)
                 },
                 ResultCount = 3,
@@ -272,8 +272,8 @@ namespace TarkovStimulants.Items
                 FormulaID = "formula_MULE_craft",
                 Materials = new List<(int itemId, long count)>
                 {
-                    (136, 1L), 
-                    (88, 1L), 
+                    (136, 1L),
+                    (88, 1L),
                     (999008, 1L)
                 },
                 ResultCount = 1,
@@ -587,7 +587,7 @@ namespace TarkovStimulants.Items
                 FormulaID = "formula_2A2bTG_craft",
                 Materials = new List<(int itemId, long count)>
                 {
-                    (999006, 1L), 
+                    (999006, 1L),
                     (88, 1L)
                 },
                 ResultCount = 1,
@@ -857,7 +857,7 @@ namespace TarkovStimulants.Items
                 ForceUnlock = true
             }
         };
-        
+
         // 19. AHF1-M (凝血针) - 品阶 2, 价格 1100
         public static readonly QuackItemDefinition Stim_AHF1M = new QuackItemDefinition
         {
@@ -959,7 +959,8 @@ namespace TarkovStimulants.Items
                     behaviors = new List<UsageBehaviorData>
                     {
                         new FoodData { energyValue = -5f, waterValue = -5f },
-                        new QuackAddBuffData { buffId = 999121, chance = 1.0f }
+                        new QuackAddBuffData { buffId = 999121, chance = 1.0f },
+                        new RemoveBuffData { buffID = 1041 }
                     }
                 }
             },
@@ -1086,8 +1087,8 @@ namespace TarkovStimulants.Items
         //         ForceUnlock = true
         //     }
         // };
-        
-        
+
+
         public static readonly QuackItemDefinition Item_InjectorCase = new QuackItemDefinition
         {
             BaseData = new ItemData
@@ -1129,7 +1130,7 @@ namespace TarkovStimulants.Items
                 ForceUnlock = false
             }
         };
-        
+
         public static readonly QuackItemDefinition Item_AutoStimCase = new QuackItemDefinition
         {
             BaseData = new ItemData

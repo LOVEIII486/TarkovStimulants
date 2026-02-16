@@ -106,7 +106,7 @@
     "Stim_PNB":"PNB肌肉兴奋剂",
     "Stim_PNB_Desc":"战斗兴奋剂，代号PNB。其能短期激活内部肌肉进入高渗透状态，显著提升身体爆发力与再生速度，但药效过后会感到虚弱。",
     "TarkovStimulants_PNB_Buff": "PNB",
-    "TarkovStimulants_PNB_Buff_Desc": "爆发期：枪械伤害提升 30%，每秒恢复 8% 生命值；35秒后触发虚弱副作用（最大生命值减少 15）。",
+    "TarkovStimulants_PNB_Buff_Desc": "爆发期：枪械伤害提升 30%，每秒恢复 8% 生命值，移除震慑效果；35秒后触发虚弱副作用（最大生命值减少 15）。",
     "TarkovStimulants_PNB_Debuff": "PNB 副作用",
     "TarkovStimulants_PNB_Debuff_Desc": "肌肉组织疲劳：最大生命值暂时减少 15 点。",
 

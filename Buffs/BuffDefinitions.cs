@@ -230,9 +230,10 @@ namespace TarkovStimulants.Buffs
             new QuackBuffDefinition(new QuackBuffFactory.BuffConfig("TarkovStimulants", "Perfotoran_Buff", 999111, 60f,
                     GetIconPath("Perfotoran")))
                 .AddCustomLogic(new RegenerationLogic(0.04f, 1.0f, 60, false))
-                .AddEffect(new ApplyBuffEffect(1075, 60))
-                .AddEffect(new ApplyBuffEffect(1019, -1))
-                .AddEffect(new ApplyBuffEffect(1092, 60));
+                .AddEffect(new ApplyBuffEffect(1075, 60f))
+                .AddEffect(new ApplyBuffEffect(1019, -1f))
+                .AddEffect(new ApplyBuffEffect(1492, 60f))
+                .AddCustomLogic(new EnegyWaterRestoreLogic(-0.03f, 0f, 1f));
                 //.AddCustomLogic(new BuffImmunityLogic(false, 1001, 1002, 1061));
 
         // 12. Stim_2A2bTG (侦察针)
@@ -344,12 +345,12 @@ namespace TarkovStimulants.Buffs
             new QuackBuffDefinition(new QuackBuffFactory.BuffConfig("TarkovStimulants", "SJ9_Buff", 999118, 180f,
                     GetIconPath("SJ9")))
                 .AddEffect(new AttributeModifierEffect(ModifierKeyConstant.Stat.VisableDistanceFactor, 0.5f, true))
-                .AddEffect(new AttributeModifierEffect(ModifierKeyConstant.Stat.WalkSoundRange, 0.5f, true))
-                .AddEffect(new AttributeModifierEffect(ModifierKeyConstant.Stat.RunSoundRange, 0.5f, true))
+                .AddEffect(new AttributeModifierEffect(ModifierKeyConstant.Stat.WalkSoundRange, 0.3f, true))
+                .AddEffect(new AttributeModifierEffect(ModifierKeyConstant.Stat.RunSoundRange, 0.3f, true))
                 .AddEffect(new AttributeModifierEffect(ModifierKeyConstant.Stat.WaterCost, 0.7f, true))
                 .AddEffect(new AttributeModifierEffect(ModifierKeyConstant.Stat.EnergyCost, 0.7f, true))
                 .AddCustomLogic(new RegenerationLogic(-0.002f, 1f, -1, false))
-                .AddCustomLogic(new DelayedBuffLogic(999301, 160f));
+                .AddCustomLogic(new DelayedBuffLogic(999301, 1f,60f,1f));
 
 
         // 19. AHF1-M (凝血针)
@@ -404,6 +405,7 @@ namespace TarkovStimulants.Buffs
                     GetIconPath("PNB")))
                 .AddEffect(new AttributeModifierEffect(ModifierKeyConstant.Stat.GunDamageMultiplier, 1.3f, true))
                 .AddCustomLogic(new RegenerationLogic(0.08f, 1.0f, 30, false))
+                .AddCustomLogic(new BuffImmunityLogic(false, 1041)) // 免疫震慑
                 .AddCustomLogic(new DelayedBuffLogic(999421, 35f));
         
         public static readonly QuackBuffDefinition PNB_Debuff =
